@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-container":"#0a2e1f","on-error-container":"#93000a","outline":"#727973","tertiary-fixed":"#ffdea3","tertiary-container":"#362500","primary-fixed":"#c5ebd4","on-primary-fixed-variant":"#2b4e3d","on-secondary-fixed-variant":"#254f38","secondary-fixed":"#bfedce","inverse-on-surface":"#ecf2ec","tertiary":"#1c1200","on-background":"#171d19","inverse-surface":"#2c322e","surface-container-highest":"#dee4de","tertiary-fixed-dim":"#e8c177","error-container":"#ffdad6","surface-tint":"#436653","on-tertiary-fixed":"#261900","surface-container":"#eaefe9","on-surface":"#171d19","on-primary-fixed":"#002113","surface-variant":"#dee4de","primary-fixed-dim":"#a9cfb9","primary":"#00180d","surface-bright":"#f5fbf4","on-tertiary-fixed-variant":"#5c4201","on-tertiary":"#ffffff","error":"#ba1a1a","surface":"#f5fbf4","on-secondary-container":"#416b52","secondary-container":"#bcebcb","on-error":"#ffffff","on-primary-container":"#739783","on-surface-variant":"#414844","secondary-fixed-dim":"#a3d1b3","inverse-primary":"#a9cfb9","outline-variant":"#c1c8c2","surface-dim":"#d6dcd5","surface-container-lowest":"#ffffff","on-secondary-fixed":"#002111","on-secondary":"#ffffff","on-tertiary-container":"#ac8a46","background":"#f5fbf4","secondary":"#3d674e","surface-container-high":"#e4eae3","on-primary":"#ffffff","surface-container-low":"#eff5ef"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-tablet":"1.25rem","space-lg":"1.5rem","gutter-mobile":"1rem","margin-tablet":"2rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-xl":"2.5rem","space-md":"1rem","space-xs":"0.25rem","margin":"4rem","space-sm":"0.5rem"},fontFamily:{"body-lg":["Inter"],"headline-md":["Playfair Display"],"headline-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"body-sm":["Inter"],"label-lg":["Inter"],"headline-lg-mobile":["Playfair Display"],"label-sm":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"display-lg-mobile":["Playfair Display"],"display-lg":["Playfair Display"]},fontSize:{"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="HerboJet Logo Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UXPyXvu89gdWxXQNgw0MDtQckLYPsdocorQ3v0fjTfERy46r-Qv7JL_8cPWICZDLipJFTu50EDvN-qZ8zgfLWfZMJCntvZnmMPqR2JLyO0qrkGcZ7DB2fjmU_SagHP7sS4irEE4LTVvMocZwB7F96A-4A4pZgx5JHJ7KYRBuO9f5PdUwGRkHuii4Yx6O1rYz6bppUPMhBb743HAUnVtZaRz3qoQBacLNsDyfNpvK7uhtfPWhsxIPgmxQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">HerboJet</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-0.5">Botanicals Egypt</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-secondary pb-1"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="product-catalog" href="#">Our Products</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="quality-and-infrastructure" href="#">Quality &amp; Infrastructure</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="bulk-inquiry" href="#">Contact &amp; Inquiry</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search Catalog" class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><a class="relative flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bulk-inquiry" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="hidden sm:inline font-label-md text-label-md">Inquiry List</span><span class="flex items-center justify-center w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">0</span></a><a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors" data-path="bulk-inquiry" href="#">Request a Quote</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Breadcrumbs & Strategic Header -->
+<section class="w-full bg-surface-container-low py-space-lg">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-sm">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-label-md text-label-md">Product Catalog</span>
+</nav>
+<!-- Editorial Header Content -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg pt-space-xs">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs text-tertiary-container font-label-sm text-label-sm uppercase tracking-widest bg-surface-container px-space-sm py-space-xs rounded mb-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+            Commercial Botanical Portfolio
+          </div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Explore Our Botanical Products
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+            Certified Egyptian herbs, medicinal plants, aromatic spices, seeds, and botanical distillates processed to European Pharmacopoeia and US FCC specifications. Available for container-load (FCL) and palletized (LCL) global export.
+          </p>
+</div>
+<!-- Metric Badges -->
+<div class="flex items-center gap-space-md shrink-0">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">verified</span>
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Traceability</div>
+<div class="font-label-md text-label-md text-primary">Farm-to-Container</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">inventory</span>
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Global Ports</div>
+<div class="font-label-md text-label-md text-primary">Alexandria &amp; Damietta</div>
+</div>
+</div>
+</div>
+</div>
+<!-- High-Precision Search Box & Quick Pills -->
+<div class="mt-space-lg bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col md:flex-row items-stretch md:items-center gap-space-sm">
+<div class="relative flex-1 flex items-center">
+<span class="material-symbols-outlined text-outline absolute left-space-md text-[20px]">search</span>
+<input class="w-full pl-11 pr-space-md py-space-sm bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="botanicalSearch" placeholder="Search by botanical Latin binomial, commercial name, or HS export code (e.g., 1211.90)..." type="text"/>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-lg shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Quick Specs:</span>
+<button class="px-space-xs py-0.5 rounded text-secondary hover:text-primary font-label-sm text-label-sm transition-colors">Chamomile</button>
+<span class="text-outline-variant">•</span>
+<button class="px-space-xs py-0.5 rounded text-secondary hover:text-primary font-label-sm text-label-sm transition-colors">Peppermint</button>
+<span class="text-outline-variant">•</span>
+<button class="px-space-xs py-0.5 rounded text-secondary hover:text-primary font-label-sm text-label-sm transition-colors">Hibiscus</button>
+<span class="text-outline-variant">•</span>
+<button class="px-space-xs py-0.5 rounded text-secondary hover:text-primary font-label-sm text-label-sm transition-colors">Coriander</button>
+<span class="text-outline-variant">•</span>
+<button class="px-space-xs py-0.5 rounded text-secondary hover:text-primary font-label-sm text-label-sm transition-colors">Nigella Sativa</button>
+</div>
+<button class="bg-primary-container text-on-primary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors flex items-center justify-center gap-space-xs">
+<span>Search Specs</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Catalog Workspace -->
+<section class="w-full py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<!-- Toolbar & Action Control Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-lg mb-space-lg">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-sm text-headline-sm text-primary">Catalog Manifest</span>
+<span class="bg-surface-container text-secondary font-label-md text-label-md px-space-sm py-0.5 rounded-full">Showing 9 of 24 Verified Grades</span>
+</div>
+<!-- Controls: Filters Summary, Sorting, Grid/List Switch -->
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest p-1 rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase px-space-xs">Sort:</span>
+<select class="bg-transparent font-label-md text-label-md text-primary focus:outline-none pr-space-sm cursor-pointer">
+<option>Alphabetical (A – Z)</option>
+<option>Harvest Season (Most Recent)</option>
+<option>HS Tariff Code Sequence</option>
+<option>Volatile Oil Fraction (High to Low)</option>
+<option>Minimum Order Qty (Lowest)</option>
+</select>
+</div>
+<!-- View Mode Toggle -->
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Grid View" class="p-1 rounded bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button aria-label="Dense Table View" class="p-1 rounded hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">view_list</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Filtering Chips Bar -->
+<div class="flex items-center gap-space-xs flex-wrap pb-space-lg mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Active Criteria:</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-lowest text-primary px-space-sm py-1 rounded-full shadow-sm">
+<span>Category: Medicinal Herbs</span>
+<button class="hover:text-error transition-colors flex items-center"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-lowest text-primary px-space-sm py-1 rounded-full shadow-sm">
+<span>Compliance: European Pharmacopoeia (Ph. Eur.)</span>
+<button class="hover:text-error transition-colors flex items-center"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-lowest text-primary px-space-sm py-1 rounded-full shadow-sm">
+<span>Status: Bulk Ready</span>
+<button class="hover:text-error transition-colors flex items-center"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<button class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors underline ml-space-xs">
+          Reset All Filters
+        </button>
+</div>
+<!-- Main Layout: 2 Columns (Filter Sidebar + Product Matrix) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl">
+<!-- Left Filter Sidebar (3 cols on desktop) -->
+<aside class="lg:col-span-3 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-primary">Parameters</span>
+</div>
+<button class="font-label-sm text-label-sm text-outline hover:text-primary uppercase tracking-wider transition-colors">Clear</button>
+</div>
+<!-- Group 1: Botanical Category -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-1">Product Category</span>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Medicinal &amp; Culinary Herbs</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline bg-surface-container px-1.5 py-0.5 rounded">12</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Aromatic Spices</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline bg-surface-container px-1.5 py-0.5 rounded">8</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Oilseeds &amp; Legumes</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline bg-surface-container px-1.5 py-0.5 rounded">6</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Botanical Distillates &amp; Oils</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline bg-surface-container px-1.5 py-0.5 rounded">4</span>
+</label>
+</div>
+<!-- Group 2: Plant Morphology -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-1">Plant Morphology</span>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Whole Flower Heads</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">5</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Whole &amp; Rubbed Leaves</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">9</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Crushed Calyces</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">3</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Cleaned Whole Seeds</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">7</span>
+</label>
+</div>
+<!-- Group 3: Cut & Granulometry -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-1">Milling &amp; Cut Type</span>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Whole Botanical</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">14</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Cut &amp; Sifted (1–4 mm)</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">18</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Fine Tea Bag Cut (TBC)</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">11</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Micronized Powder (40–80 Mesh)</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">6</span>
+</label>
+</div>
+<!-- Group 4: Egyptian Terroir Origin -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-1">Agricultural Origin</span>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Beni Suef &amp; Fayoum Oasis</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">15</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Nile Delta Floodplain</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">8</span>
+</label>
+<label class="flex items-center justify-between py-1 cursor-pointer group">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer accent-[#0A2E1F]" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary">Aswan &amp; Upper Nile</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">4</span>
+</label>
+</div>
+<!-- Group 5: Quality Compliance Standard -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-1">Quality Standards</span>
+<label class="flex items-center gap-space-xs py-1 cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary accent-[#0A2E1F]" name="standard" type="radio"/>
+<span class="font-body-sm text-body-sm text-on-surface">European Pharmacopoeia (Ph. Eur.)</span>
+</label>
+<label class="flex items-center gap-space-xs py-1 cursor-pointer">
+<input class="w-4 h-4 text-primary accent-[#0A2E1F]" name="standard" type="radio"/>
+<span class="font-body-sm text-body-sm text-on-surface">US Food Chemical Codex (FCC)</span>
+</label>
+<label class="flex items-center gap-space-xs py-1 cursor-pointer">
+<input class="w-4 h-4 text-primary accent-[#0A2E1F]" name="standard" type="radio"/>
+<span class="font-body-sm text-body-sm text-on-surface">USDA National Organic (NOP)</span>
+</label>
+</div>
+<!-- Group 6: Minimum Order Quantity Range -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-1">Export Batch MOQ</span>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Min MOQ</span>
+<span class="font-label-md text-label-md text-primary">500 KG</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Max FCL</span>
+<span class="font-label-md text-label-md text-primary">24 MT</span>
+</div>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-space-md flex flex-col gap-space-xs">
+<button class="w-full bg-primary-container text-on-primary py-space-sm rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors text-center shadow-sm">
+                Apply Specifications
+              </button>
+<button class="w-full py-space-xs text-secondary font-label-md text-label-md hover:text-primary transition-colors text-center">
+                Reset All Parameters
+              </button>
+</div>
+</div>
+<!-- Quality Guarantee Accreditation Box -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">workspace_premium</span>
+<span>Laboratory Validation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Every exported lot includes full Phytosanitary Certificates issued by the Egyptian Ministry of Agriculture and third-party Eurofins/SGS COA reports.
+            </p>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary flex items-center gap-1 font-semibold pt-1" href="#">
+<span>View Testing Protocols</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</aside>
+<!-- Right Botanical Matrix (9 cols on desktop, 3 per row) -->
+<main class="lg:col-span-9 flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+<!-- Card 1: Chamomile Flowers -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro close-up photograph of whole dried Egyptian chamomile flowers Matricaria chamomilla showcasing golden yellow central disc florets and intact white ray petals on a neutral linen canvas with warm natural diffuse daylight reflecting botanical export quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEYrwJhoXa9MhCEYuPXp4_fKSHQ1WDy9Lf8vrS1y5zuISEkwVw1e5wesIdw94wYgUHTfT-oUkH4RlxeCcBQ2nrbCTm470eHttWmS8vNB9wSqP4zuuCakKMx1SXvFvWK9a9W55Bof6smXhMUVbI5VdVKcuLcAtLTbFhr3mJQUPjy20eSXnelouKt8251NJaEbNB-99pMuxdCXOcPytEbdUZfoIoE0Jztf9srGa14sU61IsQPJ1kAsU"/>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded shadow">Current Crop 24/25</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded">Fayoum Oasis</span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded shadow-sm">HS: 1211.90.86</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Herbs &amp; Flowers</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ph. Eur. Grade</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                    Chamomile Flowers
+                  </h3>
+<div class="font-headline-sm italic text-body-sm text-on-surface-variant font-normal mb-space-sm">
+                    Matricaria chamomilla L.
+                  </div>
+<!-- Spec Matrix Grid -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5 my-space-sm">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Essential Oil Vol:</span>
+<span class="text-primary font-semibold">&gt; 0.40% v/w</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Available Cuts:</span>
+<span class="text-primary font-semibold">Whole, Sifted, TBC</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Batch Minimum (MOQ):</span>
+<span class="text-primary font-semibold">500 KG</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<button class="flex-1 bg-surface-container text-primary hover:bg-surface-container-high py-space-sm rounded-lg font-label-md text-label-md transition-colors text-center">
+                    Full Spec Sheet
+                  </button>
+<button class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Peppermint Leaves -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Overhead detailed macro shot of premium cut and sifted dried Egyptian peppermint leaves Mentha piperita displaying rich deep botanical emerald green hues and crisp leaf margins under balanced commercial studio illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNbcEl4M2x-yYZj3ce779Y_ogpiWG959qp98QOMWQ0HJ5D8OGjBJMQ5xF0V6IjdXLy73-qUIH6C9JJayiC1OOfhKhzuBKQkDsUVqe5OHisGnyphk-yDD_v0Qdp0ml7xAdHYoqU4NgQbLiBJ46dLvQmKxayjalHEltJ7vzmBvQrxc4oCPRz5HMqm53sjbpOkKjLUAB3zVF_Jnirj4Gg9HJL0G2rCumotC9hhI9TLQfqG6TxcGvi2MQ"/>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-space-sm py-0.5 rounded shadow">Steam Treated</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded">Nile Delta</span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded shadow-sm">HS: 1211.90.86</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Aromatic Herbs</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">US FCC &amp; Ph. Eur.</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                    Peppermint Leaves
+                  </h3>
+<div class="font-headline-sm italic text-body-sm text-on-surface-variant font-normal mb-space-sm">
+                    Mentha × piperita L.
+                  </div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5 my-space-sm">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Menthol Content:</span>
+<span class="text-primary font-semibold">&gt; 1.2% v/w</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Available Cuts:</span>
+<span class="text-primary font-semibold">Crushed 1–4mm, TBC</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Batch Minimum (MOQ):</span>
+<span class="text-primary font-semibold">1,000 KG</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<button class="flex-1 bg-surface-container text-primary hover:bg-surface-container-high py-space-sm rounded-lg font-label-md text-label-md transition-colors text-center">
+                    Full Spec Sheet
+                  </button>
+<button class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Hibiscus Calyces (Karkadeh) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rich vibrant ruby-crimson Egyptian dried hibiscus calyces Hibiscus sabdariffa whole botanical flower cups collected in an artisanal cedar vessel showing intact calyx structures with soft shadow play and premium texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_P-9kuKZwCMGNiPpbelk0VRGKfqEtgQ84KCJ2Ncdg-HnF1KL-r4S8za-4A0y3-qaDCDBl1f0E9ZNsAgXgLa5zBHpDKszIN449WeJhn3nA44OlhepQRjK4y6dvczHq1AECqFNCNLGziViD2p5IMMPTGc1L4ykeEwYeGWV7nGQNn6MssljkXSMTEK3-X9BFPFYyWDhmy7fLp1OX0_owVV-UUQC8XEZ4gAv5TMb9EEK4h2aPqmYtm9k"/>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="bg-tertiary-container text-on-tertiary font-label-sm text-label-sm px-space-sm py-0.5 rounded shadow">High Anthocyanin</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded">Aswan &amp; Upper Egypt</span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded shadow-sm">HS: 1211.90.10</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Botanical Calyces</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Beverage &amp; Ph. Grade</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                    Hibiscus Calyces
+                  </h3>
+<div class="font-headline-sm italic text-body-sm text-on-surface-variant font-normal mb-space-sm">
+                    Hibiscus sabdariffa L.
+                  </div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5 my-space-sm">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Moisture Profile:</span>
+<span class="text-primary font-semibold">&lt; 10.0% Max</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Available Cuts:</span>
+<span class="text-primary font-semibold">Whole Calyces, Flakes</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Batch Minimum (MOQ):</span>
+<span class="text-primary font-semibold">1,000 KG</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<button class="flex-1 bg-surface-container text-primary hover:bg-surface-container-high py-space-sm rounded-lg font-label-md text-label-md transition-colors text-center">
+                    Full Spec Sheet
+                  </button>
+<button class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Dried Basil Leaves -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Neatly arranged rubbed and sifted dried sweet basil leaves Ocimum basilicum showing olive green flakes with clean herbal aroma visually rendered under precise laboratory lighting on an ivory travertine surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0SpLVjsE0JDYl3Y2o6U-X0t8T-X4fFGWJJbxZ2_JacOTn8FagkU5hoShoenhbr0jCsv4-QZ1LNvFqzSFUuojcCBIP6oUimgtF-IG1zP8CjTdMtb1vYM_T6244HQ_DtpFKzFMgDFVyXPjAIKO7acK_2Uyh7EOs_oBq_AtRvhm2OWuTL1-P21cW_SiyiLz0ogr20t07KR1i4Qn1Og73RSZGXv9U0EN4xPbcafC-UfixISk6pjW2wAc"/>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded shadow">99.5% Purity</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded">Beni Suef</span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded shadow-sm">HS: 1211.90.86</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Herbs &amp; Seasonings</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Food Industry Grade</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                    Dried Basil Leaves
+                  </h3>
+<div class="font-headline-sm italic text-body-sm text-on-surface-variant font-normal mb-space-sm">
+                    Ocimum basilicum L.
+                  </div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5 my-space-sm">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Volatile Oil:</span>
+<span class="text-primary font-semibold">&gt; 0.50% v/w</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Available Cuts:</span>
+<span class="text-primary font-semibold">Cut &amp; Sifted, Rubbed</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Batch Minimum (MOQ):</span>
+<span class="text-primary font-semibold">1,000 KG</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<button class="flex-1 bg-surface-container text-primary hover:bg-surface-container-high py-space-sm rounded-lg font-label-md text-label-md transition-colors text-center">
+                    Full Spec Sheet
+                  </button>
+<button class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Rosemary Needles -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sun-dried dark green rosemary needle leaves Rosmarinus officinalis with silver underside accents on a dark slate board showing distinct needle structure and resinous sheen under high contrast editorial light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPWjuZQ8ZWgc-aUraa0Y9IFROzaNSVCoCLramXbYQFF1oPBS4-oc9MIcjQNMiisCSbIp7lVPPQ500NOhG7fmPIHkqsp8uKXhcvH1FnWLmftrV1lIpe-b2axcvV_6BZiOrtuBVrl7A9d_g_9kkpgESt9rOu2PQPTS7CJ4cvtQOd0c9OrACs1_J_XpYR6lDwlEOdd3LjiSIM9QKbwK0zqFYm7dkLis2WZyoG7tpKrk436f-PwCdE6iQ"/>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded shadow">Nile Basin Valley</span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded shadow-sm">HS: 1211.90.86</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Aromatic Botanicals</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pharma &amp; Extract Grade</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                    Rosemary Needles
+                  </h3>
+<div class="font-headline-sm italic text-body-sm text-on-surface-variant font-normal mb-space-sm">
+                    Rosmarinus officinalis L.
+                  </div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5 my-space-sm">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Volatile Oil:</span>
+<span class="text-primary font-semibold">&gt; 1.0% v/w</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Available Cuts:</span>
+<span class="text-primary font-semibold">Whole Needle, Crushed</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Batch Minimum (MOQ):</span>
+<span class="text-primary font-semibold">500 KG</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<button class="flex-1 bg-surface-container text-primary hover:bg-surface-container-high py-space-sm rounded-lg font-label-md text-label-md transition-colors text-center">
+                    Full Spec Sheet
+                  </button>
+<button class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6: Thyme Leaves -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Microscopic sharpness view of rubbed organic wild thyme leaves Thymus vulgaris cultivated in Egyptian reclaimed oasis soils displaying fine leaf particles and high thymol glandular trichomes in natural ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwJeCv_Vp7z13OAULnt_oynWyt4_tRv2LyRuSFK0NoN3OMgRpMZrRSFs51QNqmvgMrRUc5TMT7Kvav5w9TrSOlmWJmraQjTjnQ8mp2rNUE43_UWpcb8bKr7Qe7w1s7pxfboBrpD0jLXY1rRE6bRhRRsPxiTDkV_O3ExshE6LTCneiBPYPsa-b6S3E_P3F3h9NnFSoPEJ5dSucuYlZ6SE7korwctJA62iKWfvTkWPmNmwlOCdjCU0Q"/>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-space-sm py-0.5 rounded shadow">Thymol Rich</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded">Reclaimed Oasis</span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded shadow-sm">HS: 0910.99.90</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Herbs &amp; Spices</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ph. Eur. Tested</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                    Thyme Leaves
+                  </h3>
+<div class="font-headline-sm italic text-body-sm text-on-surface-variant font-normal mb-space-sm">
+                    Thymus vulgaris L.
+                  </div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5 my-space-sm">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Thymol Fraction:</span>
+<span class="text-primary font-semibold">&gt; 1.5% v/w</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Available Cuts:</span>
+<span class="text-primary font-semibold">Whole Leaf, Rubbed, Powder</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Batch Minimum (MOQ):</span>
+<span class="text-primary font-semibold">500 KG</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<button class="flex-1 bg-surface-container text-primary hover:bg-surface-container-high py-space-sm rounded-lg font-label-md text-label-md transition-colors text-center">
+                    Full Spec Sheet
+                  </button>
+<button class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 7: Coriander Seeds -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden spherical whole coriander seeds Coriandrum sativum machine-cleaned and destoned resting in shallow wooden sample bowl with smooth grain showing distinct longitudinal ridges and uniform export grading" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHLNuuUI3iF8kgfuD1KLaMFofQZifNs8zldkTrMUyxSK9F9JLTbl6brGOYtDENaL50UQkGZIFIlpKjlo9QgnFOzFp411OjKs8YhhS6k32yH2WdKpVIz2FAUxP0xFY-un1nIxQGECSSu7nz9sLAuyEOUJGXsRQFz10ouMle6Qb2xfvc59dtljwocSc1y1COUGerzqDajuzHlM1ZLeliD7E9mBasFz3hRlgyG9jJ1MUNBCBbbt2gThM"/>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded shadow">Machine Cleaned</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded">Middle Egypt</span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded shadow-sm">HS: 0909.21.00</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Aromatic Spices</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ASTA / ESA Clean</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                    Coriander Seeds
+                  </h3>
+<div class="font-headline-sm italic text-body-sm text-on-surface-variant font-normal mb-space-sm">
+                    Coriandrum sativum L.
+                  </div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5 my-space-sm">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Purity Grade:</span>
+<span class="text-primary font-semibold">99.0% Min Sort</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Available Cuts:</span>
+<span class="text-primary font-semibold">Whole Seeds, Ground</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Batch Minimum (MOQ):</span>
+<span class="text-primary font-semibold">2,000 KG</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<button class="flex-1 bg-surface-container text-primary hover:bg-surface-container-high py-space-sm rounded-lg font-label-md text-label-md transition-colors text-center">
+                    Full Spec Sheet
+                  </button>
+<button class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 8: Aniseed (Pimpinella anisum) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Small grey-green ribbed anise seeds Pimpinella anisum spread out across warm limestone with warm side illumination revealing fine pubescent stems and rich aromatic essential oil glands" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8VmEi4ubrRGlIF04IYwHMbA-jqbpudA-S5Qrt9a4ANC2XuZ7GohWv0dBNGaTgbf0mOTTb8eMG7tDcgrVdxiBwTm_pqdqsd6IdFSYB3GyXx7tqAGzMb-Vo4tUxI2DVKnfbs1Rco3Vdo0O6uD-ItzZbvZftrIMf33lvloxAZFFOheAcIANJ3axg3-6oh1UkEJlsoHqGLKwz4Mg-FpXNbHz0YhVXOrliVlwqu6OzM8AdbzM5Ejlt-1Q"/>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-space-sm py-0.5 rounded shadow">Steam Treated</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded">Fayoum</span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded shadow-sm">HS: 0909.10.00</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Aromatic Spices</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ph. Eur. Compliance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                    Aniseed
+                  </h3>
+<div class="font-headline-sm italic text-body-sm text-on-surface-variant font-normal mb-space-sm">
+                    Pimpinella anisum L.
+                  </div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5 my-space-sm">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Anethole Profile:</span>
+<span class="text-primary font-semibold">&gt; 85% in Volatile Oil</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Available Cuts:</span>
+<span class="text-primary font-semibold">Whole Seed, Powder</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Batch Minimum (MOQ):</span>
+<span class="text-primary font-semibold">1,000 KG</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<button class="flex-1 bg-surface-container text-primary hover:bg-surface-container-high py-space-sm rounded-lg font-label-md text-label-md transition-colors text-center">
+                    Full Spec Sheet
+                  </button>
+<button class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 9: Black Cumin (Nigella Sativa) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Glossy matte deep obsidian black cumin seeds Nigella sativa piled with botanical precision next to a small clear vial of amber cold-pressed virgin oil on a sand-colored Egyptian alabaster block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXTIHLtI-NUwprzSX0quCPGkHN6imb7XX5Z8JLEht1oZK22QURC7g14cdBUiKUdTbbmE-2uuixq3MC1uQ0zZVmD3gMZlbrIlbYeZvZ9MwYmLimHK81_M2g1QqmHdwomCHIy7d4yvtP0ZEJpVvH28ev9rJtKaLzlfpLgYrpyA6yCOChHw94mS6ODnh2bBL_GZMazNpSgp7faDYJ8_BYUXAKHN2--jUFGUh5Z_wPi2R7auwdQcvWrbM"/>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+<span class="bg-tertiary-container text-on-tertiary font-label-sm text-label-sm px-space-sm py-0.5 rounded shadow">Sortex Cleaned 99.8%</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded">Upper Egypt</span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded shadow-sm">HS: 1207.99.96</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Seeds &amp; Oils</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pharma &amp; Nutraceutical</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                    Nigella Sativa (Black Cumin)
+                  </h3>
+<div class="font-headline-sm italic text-body-sm text-on-surface-variant font-normal mb-space-sm">
+                    Nigella sativa L.
+                  </div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5 my-space-sm">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Purity Grade:</span>
+<span class="text-primary font-semibold">99.8% Optical Sort</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Available Cuts:</span>
+<span class="text-primary font-semibold">Whole Seeds, Cold Oil</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Batch Minimum (MOQ):</span>
+<span class="text-primary font-semibold">1,000 KG</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<button class="flex-1 bg-surface-container text-primary hover:bg-surface-container-high py-space-sm rounded-lg font-label-md text-label-md transition-colors text-center">
+                    Full Spec Sheet
+                  </button>
+<button class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Displaying 9 of 24 Verified Export Grades
+            </span>
+<div class="flex items-center gap-1">
+<button aria-label="Previous Page" class="w-9 h-9 rounded-lg bg-surface-container-lowest text-outline hover:text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center">
+                1
+              </button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container font-label-md text-label-md flex items-center justify-center shadow-sm transition-colors">
+                2
+              </button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container font-label-md text-label-md flex items-center justify-center shadow-sm transition-colors">
+                3
+              </button>
+<button aria-label="Next Page" class="w-9 h-9 rounded-lg bg-surface-container-lowest text-primary hover:text-secondary flex items-center justify-center shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</section>
+<!-- Technical Custom Milling & Private Spec Banner -->
+<section class="w-full bg-surface-container-high py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-md flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-widest bg-surface-container px-space-sm py-space-xs rounded mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">precision_manufacturing</span>
+<span>Custom Granulometry &amp; Blending</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">
+            Custom Botanical Milling &amp; Private Sifting Available
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+            Need a tailored mesh micron sizing (20 to 120 mesh), customized cryogenic sterilization, or private container palletization? Our in-house ISO 22000 processing facility handles bespoke client specifications.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<a class="bg-primary-container text-on-primary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors shadow-sm flex items-center gap-space-xs" href="#">
+<span>Contact Technical Milling Desk</span>
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Persistent Sticky Wholesale Inquiry Dock (Bottom Floating) -->
+<aside class="fixed bottom-6 right-6 z-40 max-w-lg w-[calc(100%-3rem)] bg-primary-container text-on-primary rounded-xl shadow-xl p-space-md backdrop-blur-lg">
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary-container">Active Inquiry Manifest</span>
+<span class="bg-secondary px-1.5 py-0.2 rounded-full font-label-sm text-label-sm text-on-secondary">3 Items</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary truncate">
+            Chamomile (Whole) • Peppermint (1–4mm) • Hibiscus (Flakes)
+          </p>
+</div>
+</div>
+<a class="shrink-0 bg-surface text-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md hover:bg-surface-container transition-colors shadow-sm flex items-center gap-1" href="#">
+<span>Review Quote</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</aside>
+</div>
+<script>
+  // Interactive UI micro-interactions for the catalog
+  document.addEventListener('DOMContentLoaded', () => {
+    // Quick search pill fill
+    const searchInput = document.getElementById('botanicalSearch');
+    const quickButtons = document.querySelectorAll('button');
+    quickButtons.forEach(btn => {
+      if (['Chamomile', 'Peppermint', 'Hibiscus', 'Coriander', 'Nigella Sativa'].includes(btn.innerText.trim())) {
+        btn.addEventListener('click', () => {
+          if (searchInput) {
+            searchInput.value = btn.innerText.trim();
+            searchInput.focus();
+          }
+        });
+      }
+    });
+
+    // Inquiry dynamic counters toggle
+    const inquiryButtons = document.querySelectorAll('button:has(span.material-symbols-outlined)');
+    inquiryButtons.forEach(btn => {
+      if (btn.innerText.includes('Inquiry')) {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const isAdded = btn.getAttribute('data-added') === 'true';
+          if (!isAdded) {
+            btn.setAttribute('data-added', 'true');
+            btn.classList.remove('bg-primary-container');
+            btn.classList.add('bg-secondary');
+            btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span><span>Added</span>';
+          } else {
+            btn.setAttribute('data-added', 'false');
+            btn.classList.remove('bg-secondary');
+            btn.classList.add('bg-primary-container');
+            btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">add</span><span>Inquiry</span>';
+          }
+        });
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter lg:gap-space-xl mb-space-xl"><div class="flex flex-col"><div class="flex items-center gap-space-sm mb-space-md"><img alt="HerboJet Logo Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UXPyXvu89gdWxXQNgw0MDtQckLYPsdocorQ3v0fjTfERy46r-Qv7JL_8cPWICZDLipJFTu50EDvN-qZ8zgfLWfZMJCntvZnmMPqR2JLyO0qrkGcZ7DB2fjmU_SagHP7sS4irEE4LTVvMocZwB7F96A-4A4pZgx5JHJ7KYRBuO9f5PdUwGRkHuii4Yx6O1rYz6bppUPMhBb743HAUnVtZaRz3qoQBacLNsDyfNpvK7uhtfPWhsxIPgmxQ"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">HerboJet</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">Premier Egyptian exporter of certified medicinal herbs, aromatic spices, and organic botanicals for international food, pharmaceutical, and nutraceutical manufacturers worldwide.</p><div class="flex items-center gap-space-sm"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container px-space-sm py-space-xs rounded"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> ISO 22000</span><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container px-space-sm py-space-xs rounded"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> USDA Organic</span></div></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary mb-space-md">Product Categories</span><ul class="flex flex-col gap-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Dried Herbs</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Culinary Spices</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Seeds &amp; Legumes</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Botanical Oils &amp; Extracts</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Custom Processing Cuts</li></ul></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary mb-space-md">Quality &amp; Compliance</span><ul class="flex flex-col gap-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Seed-to-Shipment Traceability</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Processing &amp; Sorting Facility</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Phytosanitary &amp; Testing Lab</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Moisture &amp; Purity Standards</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Export Packaging &amp; Palletizing</li></ul></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary mb-space-md">International Inquiries</span><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><div><span class="font-label-md text-label-md text-primary block">Commercial Desk:</span><span>wholesale@herbojet-botanicals.com</span></div><div><span class="font-label-md text-label-md text-primary block">Export Port Locations:</span><span>Cairo &amp; Alexandria Export Hubs, Egypt</span></div><div class="pt-space-xs"><span class="inline-block bg-surface-container text-on-surface font-label-sm text-label-sm px-space-sm py-space-xs rounded">Response within 24 business hours</span></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 HerboJet Botanical Exports S.A.E. All Rights Reserved. International wholesale supply only.</p><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><span class="hover:text-on-surface cursor-pointer">Privacy Policy</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="hover:text-on-surface cursor-pointer">Export &amp; Phytosanitary Terms</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="hover:text-on-surface cursor-pointer">Incoterms 2020 Compliance</span></div></div></div></footer></body></html>

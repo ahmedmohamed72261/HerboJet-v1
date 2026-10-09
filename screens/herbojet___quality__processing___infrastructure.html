@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-container":"#0a2e1f","on-error-container":"#93000a","outline":"#727973","tertiary-fixed":"#ffdea3","tertiary-container":"#362500","primary-fixed":"#c5ebd4","on-primary-fixed-variant":"#2b4e3d","on-secondary-fixed-variant":"#254f38","secondary-fixed":"#bfedce","inverse-on-surface":"#ecf2ec","tertiary":"#1c1200","on-background":"#171d19","inverse-surface":"#2c322e","surface-container-highest":"#dee4de","tertiary-fixed-dim":"#e8c177","error-container":"#ffdad6","surface-tint":"#436653","on-tertiary-fixed":"#261900","surface-container":"#eaefe9","on-surface":"#171d19","on-primary-fixed":"#002113","surface-variant":"#dee4de","primary-fixed-dim":"#a9cfb9","primary":"#00180d","surface-bright":"#f5fbf4","on-tertiary-fixed-variant":"#5c4201","on-tertiary":"#ffffff","error":"#ba1a1a","surface":"#f5fbf4","on-secondary-container":"#416b52","secondary-container":"#bcebcb","on-error":"#ffffff","on-primary-container":"#739783","on-surface-variant":"#414844","secondary-fixed-dim":"#a3d1b3","inverse-primary":"#a9cfb9","outline-variant":"#c1c8c2","surface-dim":"#d6dcd5","surface-container-lowest":"#ffffff","on-secondary-fixed":"#002111","on-secondary":"#ffffff","on-tertiary-container":"#ac8a46","background":"#f5fbf4","secondary":"#3d674e","surface-container-high":"#e4eae3","on-primary":"#ffffff","surface-container-low":"#eff5ef"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-tablet":"1.25rem","space-lg":"1.5rem","gutter-mobile":"1rem","margin-tablet":"2rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-xl":"2.5rem","space-md":"1rem","space-xs":"0.25rem","margin":"4rem","space-sm":"0.5rem"},fontFamily:{"body-lg":["Inter"],"headline-md":["Playfair Display"],"headline-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"body-sm":["Inter"],"label-lg":["Inter"],"headline-lg-mobile":["Playfair Display"],"label-sm":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"display-lg-mobile":["Playfair Display"],"display-lg":["Playfair Display"]},fontSize:{"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="HerboJet Logo Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UXPyXvu89gdWxXQNgw0MDtQckLYPsdocorQ3v0fjTfERy46r-Qv7JL_8cPWICZDLipJFTu50EDvN-qZ8zgfLWfZMJCntvZnmMPqR2JLyO0qrkGcZ7DB2fjmU_SagHP7sS4irEE4LTVvMocZwB7F96A-4A4pZgx5JHJ7KYRBuO9f5PdUwGRkHuii4Yx6O1rYz6bppUPMhBb743HAUnVtZaRz3qoQBacLNsDyfNpvK7uhtfPWhsxIPgmxQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">HerboJet</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-0.5">Botanicals Egypt</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-secondary pb-1"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="product-catalog" href="#">Our Products</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="quality-and-infrastructure" href="#">Quality &amp; Infrastructure</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="bulk-inquiry" href="#">Contact &amp; Inquiry</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search Catalog" class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><a class="relative flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bulk-inquiry" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="hidden sm:inline font-label-md text-label-md">Inquiry List</span><span class="flex items-center justify-center w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">0</span></a><a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors" data-path="bulk-inquiry" href="#">Request a Quote</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Navigation Sub-Bar & Breadcrumbs -->
+<section class="w-full bg-surface-container-low py-space-md">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-wrap items-center justify-between gap-space-sm">
+<nav aria-label="Breadcrumbs" class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-bold">Quality &amp; Infrastructure</span>
+</nav>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm uppercase tracking-widest text-secondary bg-surface-container px-space-sm py-1 rounded">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Audit Version 2025.2 Active
+        </span>
+<span class="hidden sm:inline-block font-label-sm text-label-sm text-on-surface-variant">ISO 22000:2018 Certified Facility</span>
+</div>
+</div>
+</section>
+<!-- Editorial Hero Section -->
+<section class="w-full bg-surface pt-space-xl pb-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-start">
+<div class="lg:col-span-8 flex flex-col">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="w-8 h-[2px] bg-secondary"></span>
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">Quality Assurance &amp; Processing Excellence</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight leading-[1.08] mb-space-md">
+            Quality from Source<br class="hidden sm:inline"/>
+<span class="italic font-normal font-headline-lg">to Global Shipment</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mb-space-xl">
+            Standardized Egyptian agricultural protocols, optical tri-chromatic sorting, controlled low-temperature dehydration, and comprehensive seed-to-container batch traceability engineered for European, North American, and Asian pharmaceutical and premium food compliance.
+          </p>
+<!-- Key Quantitative Metric Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter pt-space-xs">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase text-secondary">Optical Sorting</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">filter_alt</span>
+</div>
+<p class="font-headline-md text-headline-md text-primary font-semibold">99.8%</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Target Physical Purity</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase text-secondary">Traceability</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">qr_code_2</span>
+</div>
+<p class="font-headline-md text-headline-md text-primary font-semibold">100%</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Batch-Coded Origin Lots</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase text-secondary">Origins</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">eco</span>
+</div>
+<p class="font-headline-md text-headline-md text-primary font-semibold">Beni Suef</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">&amp; Nile Valley Contract Farms</p>
+</div>
+</div>
+</div>
+<!-- Hero Aside / Quick Inspection Card -->
+<div class="lg:col-span-4 mt-space-md lg:mt-0">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight">Accreditation Summary</h2>
+<span class="font-label-sm text-label-sm text-secondary">Updated for 2025 Harmonized Tariff</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-2 rounded">
+<span class="font-medium text-on-surface">ISO 22000:2018</span>
+<span class="font-label-sm text-label-sm text-secondary">Active Certification</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-2 rounded">
+<span class="font-medium text-on-surface">EU &amp; NOP Organic Equivalence</span>
+<span class="font-label-sm text-label-sm text-secondary">Audited Cohorts</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-2 rounded">
+<span class="font-medium text-on-surface">US-FDA Food Facility Reg.</span>
+<span class="font-label-sm text-label-sm text-secondary">Valid 2024-2026</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-2 rounded">
+<span class="font-medium text-on-surface">ISPM-15 Wood Pallets</span>
+<span class="font-label-sm text-label-sm text-secondary">Heat-Treated HT</span>
+</div>
+</div>
+<div class="pt-space-xs flex flex-col gap-space-xs">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary py-space-sm px-space-md rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors" href="#lab-testing">
+<span>View Lab Testing Protocols</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-surface-container text-secondary py-space-sm px-space-md rounded-lg font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" href="#compliance">
+<span>Download Compliance Pack</span>
+<span class="material-symbols-outlined text-[16px]">download</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Multi-Stage Seed-to-Shipment Flow -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div class="max-w-xl">
+<div class="flex items-center gap-2 mb-space-xs">
+<span class="w-6 h-[2px] bg-secondary"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Traceability Lifecycle</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">The 5-Stage Infrastructure Flow</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Every export consignment moves through a strict five-tier gatekeeping process, engineered to preserve botanical volatile oil integrity and eliminate physical contamination.
+          </p>
+</div>
+<div class="mt-space-md md:mt-0 flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Audit standard:</span>
+<span class="font-label-md text-label-md text-primary font-bold bg-surface-container px-space-sm py-1 rounded">Codex Alimentarius Compliant</span>
+</div>
+</div>
+<!-- 5-Stage Stepper Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter">
+<!-- Stage 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">01</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">agriculture</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Agricultural Sourcing</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1 mb-space-sm">Farm &amp; Soil Oversight</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Exclusively contracted grower co-operatives in Beni Suef and Minya. Verified non-GMO authenticated seed stock, seasonal soil mineral audits, and zero synthetic persistent pesticide enforcement.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Key Equipment</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">GPS Farm Plot Mapping &amp; Handheld Soil pH/EC Meters</span>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">02</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">wb_twilight</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Field Dehydration</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1 mb-space-sm">Timed Harvesting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Manual dawn harvesting to avoid midday evaporation of volatile mono- and sesquiterpenes. Transferred immediately to indirect sun-sheltered drying sheds to retain vibrant green pigmentation.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Key Equipment</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">Airflow-Monitored Shaded Tunnels (&lt;38°C Thermal Cap)</span>
+</div>
+</div>
+<!-- Stage 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">03</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">grain</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Processing Mill</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1 mb-space-sm">Optical Color Sorting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Multi-pass optical tri-chromatic cameras isolate discolored flakes, stones, and weed seeds. Integrated 12,000-Gauss rare-earth neodymium magnetic grids capture tramp ferrous particles.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Key Equipment</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">Bühler SORTEX Optical Sorters &amp; Forsberg Destoners</span>
+</div>
+</div>
+<!-- Stage 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">04</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">science</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Phytosanitary &amp; Lab</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1 mb-space-sm">Analytical Release</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              In-house moisture, hydro-distillation oil yield, and microbial bioburden testing. Independent dual-batch verification through ISO/IEC 17025 accredited labs (Eurofins, SGS) for multi-residue panels.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Key Equipment</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">Clevenger Distillation &amp; Shimadzu Moisture Analysers</span>
+</div>
+</div>
+<!-- Stage 5 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">05</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">local_shipping</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Export Dispatch</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1 mb-space-sm">Hermetic Staging</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Multi-ply poly-lined hermetic kraft sacks with food-grade container desiccant poles. Heat-treated ISPM-15 wooden pallets dispatched in desiccated FCL/LCL ocean containers via Alexandria &amp; Port Said.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Key Equipment</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">Automated Fisker Bag Stitchers &amp; Shrink-Wrap Turntables</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Laboratory Testing Protocols & Documentation Standards -->
+<section class="w-full bg-surface py-space-xl" id="lab-testing">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-space-xl">
+<div>
+<div class="flex items-center gap-2 mb-space-xs">
+<span class="w-6 h-[2px] bg-secondary"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Analytical Rigor</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Standard Testing Protocols &amp; Parameters</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-2">
+            Every batch exported by HerboJet complies with international food safety thresholds, European Pharmacopoeia (Ph. Eur.) monographs, and the American Herbal Products Association (AHPA) guidelines.
+          </p>
+</div>
+<div class="mt-space-md lg:mt-0">
+<div class="bg-surface-container p-space-sm rounded-lg flex items-center gap-space-sm text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span>Batch Releases Confirmed via 100% C.o.A. Attachment</span>
+</div>
+</div>
+</div>
+<!-- Analytical Protocol Specification Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Physical Parameter</span>
+<span class="font-label-md text-label-md bg-surface-container-low px-2 py-0.5 rounded text-primary">Target: &lt; 8.0% - 10.0%</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Moisture Content &amp; Water Activity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Evaluated using automated halogen infrared moisture analyzers and Karl Fischer volumetric titration for sensitive seed oils to prevent microbial activity in transit.
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded font-body-sm text-body-sm text-on-surface">
+<span class="font-label-sm text-label-sm text-secondary block uppercase">Standard Test Reference</span>
+<span>ISO 939 / European Pharmacopoeia (Ph. Eur. 2.2.32)</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Active Phytochemistry</span>
+<span class="font-label-md text-label-md bg-surface-container-low px-2 py-0.5 rounded text-primary">Target: Monograph Max</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Volatile Essential Oil Assay</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Clevenger hydro-distillation apparatus for 4 continuous hours. Quantifies volatile terpene yield (e.g., Peppermint &gt; 1.2% v/w; Chamomile &gt; 0.4% v/w; Basil &gt; 0.5% v/w).
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded font-body-sm text-body-sm text-on-surface">
+<span class="font-label-sm text-label-sm text-secondary block uppercase">Standard Test Reference</span>
+<span>ISO 6571 / Ph. Eur. Method 2.8.12</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Physical Purity</span>
+<span class="font-label-md text-label-md bg-surface-container-low px-2 py-0.5 rounded text-primary">Foreign Matter &lt; 0.5%</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Foreign Matter &amp; Botanical Purity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Multi-deck laboratory sieves and stereomicroscopic examination. Guarantees complete absence of glass, metal fragments, animal excreta, and non-target botanical species.
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded font-body-sm text-body-sm text-on-surface">
+<span class="font-label-sm text-label-sm text-secondary block uppercase">Standard Test Reference</span>
+<span>ISO 927 / ASTA Method 14.0 Physical Cleanliness</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Bioburden Panel</span>
+<span class="font-label-md text-label-md bg-surface-container-low px-2 py-0.5 rounded text-primary">Pathogens: Negative / 25g</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Microbiological Screen</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Comprehensive bacteriological profiling: Aerobic Mesophilic Plate Count (TPC), Yeasts &amp; Molds, Bile-tolerant Gram-negative bacteria, E. coli, and absolute Salmonella absence in 25g/375g.
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded font-body-sm text-body-sm text-on-surface">
+<span class="font-label-sm text-label-sm text-secondary block uppercase">Standard Test Reference</span>
+<span>ISO 4833-1 / FDA BAM / Ph. Eur. 5.1.8 Cat. B</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Heavy Metals &amp; Toxins</span>
+<span class="font-label-md text-label-md bg-surface-container-low px-2 py-0.5 rounded text-primary">EU Reg 2023/915 Caps</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Chemical &amp; Heavy Metals Assay</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Inductively Coupled Plasma Mass Spectrometry (ICP-MS) detection for Lead (Pb), Cadmium (Cd), Arsenic (As), and Mercury (Hg), alongside HPLC testing for Aflatoxins (B1, B2, G1, G2) and Ochratoxin A.
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded font-body-sm text-body-sm text-on-surface">
+<span class="font-label-sm text-label-sm text-secondary block uppercase">Standard Test Reference</span>
+<span>EPA 6020B / EN 15763 / ICP-MS Methodology</span>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Pesticide Residues</span>
+<span class="font-label-md text-label-md bg-surface-container-low px-2 py-0.5 rounded text-primary">500+ Active Compounds</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Pesticide Multi-Residue Screen</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              High-sensitivity GC-MS/MS and LC-MS/MS multi-residue pesticide screens conducted via Eurofins/SGS to ensure total compliance with Regulation (EC) No 396/2005 Maximum Residue Limits (MRLs).
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded font-body-sm text-body-sm text-on-surface">
+<span class="font-label-sm text-label-sm text-secondary block uppercase">Standard Test Reference</span>
+<span>DIN EN 15662 (QuEChERS Method)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Export Compliance, Accreditations & Certifications Desk -->
+<section class="w-full bg-surface-container-low py-space-xl" id="compliance">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl">
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-space-xs">
+<span class="w-6 h-[2px] bg-secondary"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Regulatory Transparency</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-sm">
+                Compliance Desk &amp; Export Verification
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-lg">
+                International trade requires absolute legal certainty. HerboJet coordinates directly with port quarantine authorities, accredited laboratories, and international customs brokerages to deliver seamless door-to-door or CIF release.
+              </p>
+</div>
+<!-- Download CTA Buttons -->
+<div class="flex flex-col sm:flex-row gap-space-sm pt-space-md">
+<button class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>Request Sample CoA</span>
+</button>
+<button class="inline-flex items-center justify-center gap-2 bg-surface-container text-secondary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_download</span>
+<span>Export Compliance Guide (PDF)</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<!-- Box 1 -->
+<div class="bg-surface p-space-md rounded-lg flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Phytosanitary Certification</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Official health certificates issued under the mandate of the Egyptian Central Administration of Plant Quarantine (CAPQ) accompanying each ocean Bill of Lading.
+              </p>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-auto pt-space-sm uppercase tracking-wide">IPPC Compliant Format</span>
+</div>
+<!-- Box 2 -->
+<div class="bg-surface p-space-md rounded-lg flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">assignment_turned_in</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Batch Certificate of Analysis</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Lot-specific physical, chemical, and microbiological analytics certified by QA leadership prior to warehouse container staging. Never reused legacy documents.
+              </p>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-auto pt-space-sm uppercase tracking-wide">Batch-Specific Release</span>
+</div>
+<!-- Box 3 -->
+<div class="bg-surface p-space-md rounded-lg flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">nature</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Pharmacopoeia Alignment</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Processing calibrated to meet European Pharmacopoeia (Ph. Eur.) and US Food Chemical Codex (FCC) purity thresholds for extract manufacturers and tea packers.
+              </p>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-auto pt-space-sm uppercase tracking-wide">Ph. Eur. / FCC Monograph</span>
+</div>
+<!-- Box 4 -->
+<div class="bg-surface p-space-md rounded-lg flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">public</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Single-Origin Organic Lots</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Contract fields isolated and farmed under Organic cultivation techniques compatible with EU Regulation 2018/848 and USDA National Organic Program standards.
+              </p>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-auto pt-space-sm uppercase tracking-wide">Organic Transition Audits</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Processing Facilities & Equipment Showcase -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<div class="flex items-center gap-2 mb-space-xs">
+<span class="w-6 h-[2px] bg-secondary"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Advanced Machinery</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Processing Facilities &amp; Equipment</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-2">
+            Modern high-throughput milling, color sorting, and dehumidified packaging installations designed for zero cross-contamination and botanical leaf structure preservation.
+          </p>
+</div>
+<div class="mt-space-md md:mt-0 font-label-md text-label-md text-on-surface-variant">
+          Facility Footprint: <span class="text-primary font-bold">14,500 m² Operational Space</span>
+</div>
+</div>
+<!-- 4-Card Equipment Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Photo Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col group">
+<div class="relative h-60 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern stainless steel industrial multi-deck vibrating sifting sieves and air classification separators sorting dried chamomile flowers and peppermint leaves in a spotless food-grade Egyptian processing facility. Clean natural lighting highlighting metallic machinery and botanical textures in deep forest green and polished chrome tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ3Z5MOzxRKtYbXRlzCCHxfxFfQAAGDmXrnnaYAfUmGVKS1v7u4jQ49bDAZPRADy1wtx63EmlwDWoimhJN510mn0uJGH1WdULNcod_K12rCaWMqo-cKKRt0LwBv79LeR4fsCtodTLbjKW_4XUXdGTDkzG0KoyZ1dEjFBQUfS_CksvhG6j9DCfrt3G-6LqFrwtE1QXvGkzairiQaiH82eQXg2yto3rfYbvBKRMh622L_EQrNim2tO0"/>
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-sm text-label-sm px-2 py-1 rounded">
+              Aspiration Line
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Multi-Deck Vibrating Sieves</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+              Graded mesh screens and multi-stage counter-current aspiration classifying cut-and-sifted sizes while extracting lightweight fines, fluff, and chaff.
+            </p>
+<div class="mt-auto pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Throughput: 3.5 MT/hr</span>
+<span class="text-secondary font-bold">Closed Circuit</span>
+</div>
+</div>
+</div>
+<!-- Photo Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col group">
+<div class="relative h-60 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-resolution Buhler SORTEX optical color sorting machine chamber with vibrant LED array and optical sensors scanning dried botanical flakes. Clean industrial environment showcasing extreme purity separation in botanical export processing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhJQU0loY72kxoeXVsdU16TF9c0j1NRNNxuSYvfqjnh8dUKC4z2uac_f0UCT-GQUQcRoo0X16W4LbJHHA-CRpCkiXu1jw04GxrmdOLLufNs7XPMAuzRA8qYzkFx6-8pclksEMAC7hPvnK66nRYSX3baDVVyJyAL-eCAVtxQL4s35PHsTR01_8BwESn5H3FTWtEXR-Yy7N4qn_g3TuPZUT0rMK1Q3qRmffjTvgyXs70UKqFEF6xSGk"/>
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-sm text-label-sm px-2 py-1 rounded">
+              High-Precision Optical
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Optical Tri-Chromatic Sorters</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+              High-frequency pneumatic reject ejectors and infrared inspection channels removing subtle botanical discoloration and sub-millimeter foreign objects.
+            </p>
+<div class="mt-auto pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Bühler SORTEX S Ultra</span>
+<span class="text-secondary font-bold">99.8% Purity Target</span>
+</div>
+</div>
+</div>
+<!-- Photo Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col group">
+<div class="relative h-60 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Organized climate controlled warehouse showing neatly stacked kraft sacks and bulk tote bags on ISPM-15 certified wooden pallets. Industrial HVAC ducts and humidity control gauges in a modern hygienic botanical warehouse in Cairo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD7Pvx0GEwL7t9equjNLGDGJPsOO4C1eleOq5vncWB1N7Lc3-WB0LE8gea2S4nevwI2eOOGqWN0KtoVcbtSv7EzPteWIiDyRnTS5zhjQDKKOkqZAyZdfvFuQxzHg6MUQQ0Wt0p6lkH-GS8x0kBMllE9Y814x0bLVe5_7Bk8z6Wsbm2XyoJHZQG6paZvdlBkMLAT8rXVX7jgMcdQytWxlEQZwElokm3ZMWxGZmEjXgdETXk30n_Viw"/>
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-sm text-label-sm px-2 py-1 rounded">
+              Storage Hygiene
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Climate-Controlled Warehouses</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+              Constant relative humidity (&lt;50% RH) and ambient temperature stabilization under 22°C to prevent lipid peroxidation and volatile oil dissipation during bulk buffer storage.
+            </p>
+<div class="mt-auto pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>RH &lt;50% Continuous</span>
+<span class="text-secondary font-bold">Pest-Free Sealed</span>
+</div>
+</div>
+</div>
+<!-- Photo Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col group">
+<div class="relative h-60 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Automated industrial packaging conveyor line stitching heavy duty kraft paper export bags with clean hermetic inner lining. Quality assurance personnel inspecting palletized spice sacks ready for container sealing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAFR0BPPMqDPlH0VaRGgNgSK4w4RLyHvFbn0uciiP1bQzWcfQ-wZMvfNmflAOZoGhBvz9HHkxX60j_hB1JacRn0xH3jSIrDTOPDgtV_JT8vSG-3AcTWOQqTYZzEk7m866uFjmvNDFfjBQGg-ajARvgpI3XpxL1YXvOINO_cVFFDQkxHtNV-ff9MHgQzvP4DoehBxiuajojSlytH6Rublib6u2hBNqsubp1aNSxSmYIA907aDpT34M"/>
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-sm text-label-sm px-2 py-1 rounded">
+              Export Packing
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Palletizing &amp; Packing Line</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+              Continuous thermal sealing and heavy-duty crepe bag sewing lines with automated pallet stretch-wrapping to protect moisture barriers across transoceanic shipping routes.
+            </p>
+<div class="mt-auto pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Hermetic Inner Liners</span>
+<span class="text-secondary font-bold">ISPM-15 Certified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Quality Desk Technical Inspection Inquiry Banner -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="bg-primary-container text-on-primary rounded-xl p-space-lg md:p-space-xl shadow-xl relative overflow-hidden">
+<!-- Subtle botanical decorative background layer -->
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-secondary/20 pointer-events-none blur-3xl"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs text-on-primary-container font-label-md text-label-md uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Third-Party Verification &amp; Facility Audits</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg tracking-tight mb-space-xs">
+              Schedule a Technical Facility Audit or Pre-Shipment Inspection
+            </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+              HerboJet welcomes mandated technical inspections prior to final container sealing. We accommodate independent on-site audits by SGS, Bureau Veritas, Eurofins, or your proprietary corporate procurement technical officers.
+            </p>
+</div>
+<div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-space-sm min-w-max">
+<a class="inline-flex items-center justify-center gap-2 bg-on-primary text-primary px-space-lg py-space-md rounded-lg font-label-lg text-label-lg hover:bg-surface-container-lowest transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span>Consult with Quality Manager</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 bg-secondary text-on-secondary px-space-lg py-space-md rounded-lg font-label-lg text-label-lg hover:bg-secondary/90 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">lab_profile</span>
+<span>Request Lab Testing Protocol</span>
+</a>
+</div>
+</div>
+<div class="relative z-10 mt-space-lg pt-space-md grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div>
+<span class="font-label-sm text-label-sm text-on-primary-container block uppercase">Inspection Access</span>
+<span class="font-body-sm text-body-sm font-semibold">Alexandria &amp; Cairo Hubs</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-primary-container block uppercase">Batch Retention</span>
+<span class="font-body-sm text-body-sm font-semibold">24 Months Climate Library</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-primary-container block uppercase">Lot Traceability</span>
+<span class="font-body-sm text-body-sm font-semibold">Barcoded Container Manifest</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-primary-container block uppercase">Average Release SLA</span>
+<span class="font-body-sm text-body-sm font-semibold">48h Final CoA Validation</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter lg:gap-space-xl mb-space-xl"><div class="flex flex-col"><div class="flex items-center gap-space-sm mb-space-md"><img alt="HerboJet Logo Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UXPyXvu89gdWxXQNgw0MDtQckLYPsdocorQ3v0fjTfERy46r-Qv7JL_8cPWICZDLipJFTu50EDvN-qZ8zgfLWfZMJCntvZnmMPqR2JLyO0qrkGcZ7DB2fjmU_SagHP7sS4irEE4LTVvMocZwB7F96A-4A4pZgx5JHJ7KYRBuO9f5PdUwGRkHuii4Yx6O1rYz6bppUPMhBb743HAUnVtZaRz3qoQBacLNsDyfNpvK7uhtfPWhsxIPgmxQ"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">HerboJet</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">Premier Egyptian exporter of certified medicinal herbs, aromatic spices, and organic botanicals for international food, pharmaceutical, and nutraceutical manufacturers worldwide.</p><div class="flex items-center gap-space-sm"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container px-space-sm py-space-xs rounded"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> ISO 22000</span><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container px-space-sm py-space-xs rounded"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> USDA Organic</span></div></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary mb-space-md">Product Categories</span><ul class="flex flex-col gap-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Dried Herbs</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Culinary Spices</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Seeds &amp; Legumes</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Botanical Oils &amp; Extracts</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Custom Processing Cuts</li></ul></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary mb-space-md">Quality &amp; Compliance</span><ul class="flex flex-col gap-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Seed-to-Shipment Traceability</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Processing &amp; Sorting Facility</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Phytosanitary &amp; Testing Lab</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Moisture &amp; Purity Standards</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Export Packaging &amp; Palletizing</li></ul></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary mb-space-md">International Inquiries</span><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><div><span class="font-label-md text-label-md text-primary block">Commercial Desk:</span><span>wholesale@herbojet-botanicals.com</span></div><div><span class="font-label-md text-label-md text-primary block">Export Port Locations:</span><span>Cairo &amp; Alexandria Export Hubs, Egypt</span></div><div class="pt-space-xs"><span class="inline-block bg-surface-container text-on-surface font-label-sm text-label-sm px-space-sm py-space-xs rounded">Response within 24 business hours</span></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 HerboJet Botanical Exports S.A.E. All Rights Reserved. International wholesale supply only.</p><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><span class="hover:text-on-surface cursor-pointer">Privacy Policy</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="hover:text-on-surface cursor-pointer">Export &amp; Phytosanitary Terms</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="hover:text-on-surface cursor-pointer">Incoterms 2020 Compliance</span></div></div></div></footer></body></html>

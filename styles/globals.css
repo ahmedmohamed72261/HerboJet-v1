@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@layer base {
+  :root {
+  --color-primary-container: #0a2e1f;
+  --color-on-error-container: #93000a;
+  --color-outline: #727973;
+  --color-tertiary-fixed: #ffdea3;
+  --color-tertiary-container: #362500;
+  --color-primary-fixed: #c5ebd4;
+  --color-on-primary-fixed-variant: #2b4e3d;
+  --color-on-secondary-fixed-variant: #254f38;
+  --color-secondary-fixed: #bfedce;
+  --color-inverse-on-surface: #ecf2ec;
+  --color-tertiary: #1c1200;
+  --color-on-background: #171d19;
+  --color-inverse-surface: #2c322e;
+  --color-surface-container-highest: #dee4de;
+  --color-tertiary-fixed-dim: #e8c177;
+  --color-error-container: #ffdad6;
+  --color-surface-tint: #436653;
+  --color-on-tertiary-fixed: #261900;
+  --color-surface-container: #eaefe9;
+  --color-on-surface: #171d19;
+  --color-on-primary-fixed: #002113;
+  --color-surface-variant: #dee4de;
+  --color-primary-fixed-dim: #a9cfb9;
+  --color-primary: #00180d;
+  --color-surface-bright: #f5fbf4;
+  --color-on-tertiary-fixed-variant: #5c4201;
+  --color-on-tertiary: #ffffff;
+  --color-error: #ba1a1a;
+  --color-surface: #f5fbf4;
+  --color-on-secondary-container: #416b52;
+  --color-secondary-container: #bcebcb;
+  --color-on-error: #ffffff;
+  --color-on-primary-container: #739783;
+  --color-on-surface-variant: #414844;
+  --color-secondary-fixed-dim: #a3d1b3;
+  --color-inverse-primary: #a9cfb9;
+  --color-outline-variant: #c1c8c2;
+  --color-surface-dim: #d6dcd5;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-secondary-fixed: #002111;
+  --color-on-secondary: #ffffff;
+  --color-on-tertiary-container: #ac8a46;
+  --color-background: #f5fbf4;
+  --color-secondary: #3d674e;
+  --color-surface-container-high: #e4eae3;
+  --color-on-primary: #ffffff;
+  --color-surface-container-low: #eff5ef;
+
+  }
+
+  .dark {
+  /* Deep Soothing Forest Green Backgrounds */
+  --color-background: #041f14; /* Very deep pine, easy on eyes */
+  --color-on-background: #ffffff; /* Pure white text, NO green tint */
+  
+  --color-surface: #062c1d; 
+  --color-on-surface: #ffffff;
+  --color-surface-variant: #083a26;
+  --color-on-surface-variant: #e5e7eb; /* Neutral soft gray text */
+  
+  --color-surface-container-lowest: #02120b;
+  --color-surface-container-low: #041f14;
+  --color-surface-container: #062c1d;
+  --color-surface-container-high: #083a26;
+  --color-surface-container-highest: #0b4d32;
+  
+  /* Primary: Emerald for buttons/highlights */
+  --color-primary: #10b981;
+  --color-on-primary: #000000;
+  --color-primary-container: #047857;
+  --color-on-primary-container: #ffffff;
+  
+  /* Secondary: Warm Wood/Amber accent */
+  --color-secondary: #d97706;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #92400e;
+  --color-on-secondary-container: #fef3c7;
+  
+  /* Tertiary: Soft Teal */
+  --color-tertiary: #0d9488;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #0f766e;
+  --color-on-tertiary-container: #ccfbf1;
+  
+  --color-error: #ef4444;
+  --color-on-error: #ffffff;
+  --color-error-container: #991b1b;
+  --color-on-error-container: #fee2e2;
+  
+  --color-outline: #115e59;
+  --color-outline-variant: #064e3b;
+  
+  --color-inverse-surface: #ffffff;
+  --color-inverse-on-surface: #041f14;
+  --color-inverse-primary: #059669;
+  
+  /* Fixed variants */
+  --color-primary-fixed: #047857;
+  --color-primary-fixed-dim: #065f46;
+  --color-on-primary-fixed: #d1fae5;
+  --color-on-primary-fixed-variant: #10b981;
+  
+  --color-secondary-fixed: #92400e;
+  --color-secondary-fixed-dim: #78350f;
+  --color-on-secondary-fixed: #fef3c7;
+  --color-on-secondary-fixed-variant: #d97706;
+  
+  --color-tertiary-fixed: #0f766e;
+  --color-tertiary-fixed-dim: #115e59;
+  --color-on-tertiary-fixed: #ccfbf1;
+  --color-on-tertiary-fixed-variant: #0d9488;
+  
+  --color-surface-dim: #041f14;
+  --color-surface-bright: #083a26;
+  --color-surface-tint: #10b981;
+  }
+
+  /* Force headings to be white in dark mode instead of green */
+  .dark h1.text-primary,
+  .dark h2.text-primary,
+  .dark h3.text-primary,
+  .dark h4.text-primary,
+  .dark h5.text-primary,
+  .dark h6.text-primary,
+  .dark p.text-primary,
+  .dark span.text-primary {
+    color: var(--color-on-background) !important;
+  }
+  
+  body {
+    @apply bg-background text-on-surface antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}

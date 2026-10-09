@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-container":"#0a2e1f","on-error-container":"#93000a","outline":"#727973","tertiary-fixed":"#ffdea3","tertiary-container":"#362500","primary-fixed":"#c5ebd4","on-primary-fixed-variant":"#2b4e3d","on-secondary-fixed-variant":"#254f38","secondary-fixed":"#bfedce","inverse-on-surface":"#ecf2ec","tertiary":"#1c1200","on-background":"#171d19","inverse-surface":"#2c322e","surface-container-highest":"#dee4de","tertiary-fixed-dim":"#e8c177","error-container":"#ffdad6","surface-tint":"#436653","on-tertiary-fixed":"#261900","surface-container":"#eaefe9","on-surface":"#171d19","on-primary-fixed":"#002113","surface-variant":"#dee4de","primary-fixed-dim":"#a9cfb9","primary":"#00180d","surface-bright":"#f5fbf4","on-tertiary-fixed-variant":"#5c4201","on-tertiary":"#ffffff","error":"#ba1a1a","surface":"#f5fbf4","on-secondary-container":"#416b52","secondary-container":"#bcebcb","on-error":"#ffffff","on-primary-container":"#739783","on-surface-variant":"#414844","secondary-fixed-dim":"#a3d1b3","inverse-primary":"#a9cfb9","outline-variant":"#c1c8c2","surface-dim":"#d6dcd5","surface-container-lowest":"#ffffff","on-secondary-fixed":"#002111","on-secondary":"#ffffff","on-tertiary-container":"#ac8a46","background":"#f5fbf4","secondary":"#3d674e","surface-container-high":"#e4eae3","on-primary":"#ffffff","surface-container-low":"#eff5ef"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-tablet":"1.25rem","space-lg":"1.5rem","gutter-mobile":"1rem","margin-tablet":"2rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-xl":"2.5rem","space-md":"1rem","space-xs":"0.25rem","margin":"4rem","space-sm":"0.5rem"},fontFamily:{"body-lg":["Inter"],"headline-md":["Playfair Display"],"headline-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"body-sm":["Inter"],"label-lg":["Inter"],"headline-lg-mobile":["Playfair Display"],"label-sm":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"display-lg-mobile":["Playfair Display"],"display-lg":["Playfair Display"]},fontSize:{"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="HerboJet Logo Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UXPyXvu89gdWxXQNgw0MDtQckLYPsdocorQ3v0fjTfERy46r-Qv7JL_8cPWICZDLipJFTu50EDvN-qZ8zgfLWfZMJCntvZnmMPqR2JLyO0qrkGcZ7DB2fjmU_SagHP7sS4irEE4LTVvMocZwB7F96A-4A4pZgx5JHJ7KYRBuO9f5PdUwGRkHuii4Yx6O1rYz6bppUPMhBb743HAUnVtZaRz3qoQBacLNsDyfNpvK7uhtfPWhsxIPgmxQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">HerboJet</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-0.5">Botanicals Egypt</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-secondary pb-1"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="product-catalog" href="#">Our Products</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="quality-and-infrastructure" href="#">Quality &amp; Infrastructure</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="bulk-inquiry" href="#">Contact &amp; Inquiry</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search Catalog" class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><a class="relative flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bulk-inquiry" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="hidden sm:inline font-label-md text-label-md">Inquiry List</span><span class="flex items-center justify-center w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">0</span></a><a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors" data-path="bulk-inquiry" href="#">Request a Quote</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Compliance Indicator Bar -->
+<section class="w-full bg-surface-container-low">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Our Products</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Herbs</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Egyptian Chamomile (Matricaria chamomilla)</span>
+</nav>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary bg-surface-container px-space-sm py-space-xs rounded">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>EXPORT INVENTORY ACTIVE: 2024/2025 CROP</span>
+</div>
+<div class="hidden sm:flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">verified</span>
+<span>Ph. Eur. 10.0 &amp; USP Compliant</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Hero Overview (2-Column Architecture) -->
+<section class="w-full py-space-xl lg:py-16">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-start">
+<!-- Left Column: Botanical Imagery & Specimen Showcase (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Main Showcase View -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container shadow-md group">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Macro close-up photograph of whole dried Egyptian chamomile flowers, showcasing pristine golden yellow disk florets, intact ivory white ray petals, and delicate green calyces under soft natural daylight against a neutral linen background, high botanical fidelity." id="main-showcase-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs6rQ--xc4GGoVCyH2zvWU-6swpDkndxXG_Dkyyd0ctOyjuSd0Iad7DmsHU-9bTvyeSHjxdxyrneIGyudpahP69yX2WGcCYaUgICPrX_CcqesO-D6yJ7CAnWfvspWQV172M4_XsdxVLenfG_rXp8E09EzhoRFltGZcmnXtsCkE3rH9VdhxkO1pdNgbIWSAlUZoJQkBsrK_5wOvN3k-NoLlDE6gRv2OF2mRo0KP_Uzl5LBeYH9Y7pg"/>
+<!-- Badges Floating Over Image -->
+<div class="absolute top-space-md left-space-md flex flex-wrap gap-space-xs z-10">
+<span class="bg-primary/90 text-on-primary font-label-sm text-label-sm uppercase px-space-sm py-space-xs rounded backdrop-blur-sm shadow-sm">
+                Current Crop: 2024/2025 Harvest
+              </span>
+<span class="bg-surface-container-lowest/95 text-primary font-label-sm text-label-sm px-space-sm py-space-xs rounded shadow-sm">
+                Fayoum &amp; Beni Suef Basin
+              </span>
+</div>
+<div class="absolute bottom-space-md right-space-md z-10">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/95 text-secondary font-label-sm text-label-sm px-space-sm py-space-xs rounded shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Optical Buhler Sorted: 99.5% Purity
+              </span>
+</div>
+</div>
+<!-- Thumbnail Showcase Selector -->
+<div class="grid grid-cols-4 gap-space-sm">
+<button class="thumb-btn text-left p-space-xs rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active-thumb group" onclick="updateShowcase(0)" type="button">
+<div class="aspect-square rounded overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Sun-dried whole Egyptian chamomile flower heads spread evenly on clean wooden drying trays, bright yellow centers and intact white petals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1mHFkBKP9RwlKIv0YgCf1FKxMRIKGRvHYDq5GM0fOArXQcYIf-1HFvYv11Tmq6m78N34y6AC3qMmd4LsbDLkdKQPt-dfAs1pQbDwj1x7qDhuy9fnm40qWVPP6FxjuDWtIFvKved4gFxMYhvH-v_bW36fYLIHlMA61c8aVxbC7tY0C_jeqKwbjtBQp-UxH58w7aJ259RYHrJkhoQEGeKBQgWHfOOXagMycHI_JKecKWUpO_KKbIzk"/>
+</div>
+<span class="block font-label-sm text-label-sm text-primary font-semibold truncate">1. Whole Flower Heads</span>
+<span class="block font-body-sm text-[11px] text-on-surface-variant leading-none mt-0.5">Grade A (Capitula)</span>
+</button>
+<button class="thumb-btn text-left p-space-xs rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group opacity-85" onclick="updateShowcase(1)" type="button">
+<div class="aspect-square rounded overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Precision tea-bag cut chamomile herbal particles, uniform golden-green milled botanical flakes passing 0.5mm to 1.5mm screens with minimal fine dust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTNWhkhucp9IgPpPgF2-n1r667cgfrXc8ZIQts1uOjQc_zKFL_SjLwg9t52218CFtCc7oomyBX2y16XNwXXTdSRPYrNODfEz3Xe5qe_viWhIRKASof8Gr89wTFDMbWqr4o9lnTw5l6c1rXjAfRfveBJiHh7enoq_Wd16uBNPaUermOE_EeiNgQDlNUTUFEb1MhN1MPmqHp-scsQCf0dXh8N1yDgmmyV3t_qtqDpwyBbN95RxP-u_U"/>
+</div>
+<span class="block font-label-sm text-label-sm text-primary font-semibold truncate">2. Tea-Bag Cut (TBC)</span>
+<span class="block font-body-sm text-[11px] text-on-surface-variant leading-none mt-0.5">0.5 – 1.5 mm mesh</span>
+</button>
+<button class="thumb-btn text-left p-space-xs rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group opacity-85" onclick="updateShowcase(2)" type="button">
+<div class="aspect-square rounded overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="High-resolution laboratory macro inspection of optical color sorted chamomile petals showing pure uniform chromatic separation and zero weed seeds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhLEx5Jv5iGbX5FXtIngf7h34DEIMizJKzli3VqIFE0ECprU0u0MD8PKxvxS7xcqVRHWA82inA8wu0UEiO6TEj1n5nTfrAyBdc5KKry-QcOxc_YT_kVEHr15b_3XUoNe_lP7Khx3AgTEywNO-qMNNYr4K0Hg8_hvOkhrLrTDJdUUlf1exg2-LeeqcAM5kVP92bJGZ2eseefQ_0qRCrlmPkfLfWQl9W80nqrGJVwkeLX20cFo3Mxeo"/>
+</div>
+<span class="block font-label-sm text-label-sm text-primary font-semibold truncate">3. Color-Sorted Batch</span>
+<span class="block font-body-sm text-[11px] text-on-surface-variant leading-none mt-0.5">Buhler Sortex purity</span>
+</button>
+<button class="thumb-btn text-left p-space-xs rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group opacity-85" onclick="updateShowcase(3)" type="button">
+<div class="aspect-square rounded overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Heavy duty multi-wall 25kg kraft paper export sacks on wooden heat-treated pallets inside an industrial agricultural logistics export warehouse." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS_NiMo5PK41TQVuAla4IkHJmW6ewJnhMhIcL2HlWjRnOrAeHe6hzic6YE4lMU9-FkRIGFbaMEeW4HuE032pagtDJnXgt51-Fsq9eTHDzTcnOxdwMAMcmjtaFLWLK01w0DH9yZ8oT9sGW3XU5jpDiKRbnsS3FSBA_woQ1mAcuBG0VxK2DBodciGfAlX1R3_e4SWQ9LvhlYGQXSPmiWB0ZSqdWDmNaNlENxn4NEDREXrhiif2UjFf4"/>
+</div>
+<span class="block font-label-sm text-label-sm text-primary font-semibold truncate">4. 25kg Kraft Sacks</span>
+<span class="block font-body-sm text-[11px] text-on-surface-variant leading-none mt-0.5">Polyethylene moisture liner</span>
+</button>
+</div>
+<!-- Quality Assurance Strip -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">biotech</span>
+</div>
+<div>
+<span class="font-headline-sm text-[18px] leading-tight text-primary block">Triple Analytical Verification</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Validated for Chamazulene, Bisabolol, and Heavy Metal Compliance per European &amp; FDA monographs.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="inline-flex items-center px-space-sm py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">ISO 22000</span>
+<span class="inline-flex items-center px-space-sm py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">EU Organic</span>
+<span class="inline-flex items-center px-space-sm py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">USDA NOP</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Nomenclature, Quick Specs & Quotation Engine (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase font-semibold">Botanical Herb Export Monograph</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-sm py-0.5 rounded">HS: 1211.90.86</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary leading-tight mb-space-xs">
+              Egyptian Chamomile
+            </h1>
+<p class="font-headline-md text-[20px] italic text-secondary font-normal mb-space-md font-headline-sm">
+              Matricaria chamomilla L. <span class="not-italic text-body-sm font-body-sm text-on-surface-variant font-normal">(syn. Chamomilla recutita) • Asteraceae</span>
+</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Carefully hand-harvested and shade-dried Egyptian chamomile blossoms with intense golden-yellow disc florets and fragrant white ray petals. Sourced directly from contracted generational grower cooperatives across Fayoum and Beni Suef, precision-cleaned via optical Buhler sorters to guarantee low dust and minimal stem content.
+            </p>
+</div>
+<!-- Quick Specs Key-Value Cards -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Volatile Oil Content</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">≥ 0.40 – 0.65%</span>
+<span class="font-body-sm text-[12px] text-secondary block mt-0.5">Chamazulene &amp; Bisabolol Rich</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Standard Export MOQ</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">500 KG</span>
+<span class="font-body-sm text-[12px] text-secondary block mt-0.5">FCL 20ft: ~3.5 MT / 7 MT TBC</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Available Cuts</span>
+<span class="font-label-lg text-label-lg text-primary font-semibold block">Whole, TBC, Powder</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant block mt-0.5">0.2mm to whole capitula</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Dispatch Lead Time</span>
+<span class="font-label-lg text-label-lg text-primary font-semibold block">7–14 Business Days</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant block mt-0.5">FOB Port Alexandria / Said</span>
+</div>
+</div>
+<!-- Sticky Commercial Quote & Spec Calculator Container -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">calculate</span>
+<span class="font-headline-sm text-[18px] text-primary">Wholesale Pricing Desk</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container bg-tertiary-fixed/30 px-space-sm py-1 rounded">
+                Direct Mill Supply
+              </span>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); triggerInquiryConfirm();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1" for="calc-cut">
+                    Cut / Milling Grade
+                  </label>
+<select class="w-full bg-surface-container px-space-md py-space-sm rounded font-body-sm text-body-sm text-primary focus:outline-none" id="calc-cut">
+<option value="whole-a">Whole Flower Heads (Grade A - 98%)</option>
+<option value="whole-b">Whole Flower Heads (Grade B - 90%)</option>
+<option value="tbc-fine">Fine Tea-Bag Cut (TBC 0.2 - 1.5mm)</option>
+<option value="cut-sifted">Cut &amp; Sifted (C&amp;S 1 - 4mm)</option>
+<option value="powder">Chamomile Botanical Powder (80 Mesh)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1" for="calc-qty">
+                    Volume Lot
+                  </label>
+<select class="w-full bg-surface-container px-space-md py-space-sm rounded font-body-sm text-body-sm text-primary focus:outline-none" id="calc-qty">
+<option value="500kg">500 KG (Trial Commercial LCL)</option>
+<option selected="" value="1000kg">1,000 KG / 1 MT (Palletized)</option>
+<option value="3500kg">3,500 KG (20ft FCL Dry Van)</option>
+<option value="8000kg">8,000 KG (40ft HQ Container)</option>
+<option value="custom">Custom Multi-Container Contract</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1" for="calc-dest">
+                  Intended Discharge Port (Incoterms 2020)
+                </label>
+<select class="w-full bg-surface-container px-space-md py-space-sm rounded font-body-sm text-body-sm text-primary focus:outline-none" id="calc-dest">
+<option value="hamburg">Hamburg / Bremen (CIF / CFR Europe)</option>
+<option value="rotterdam">Rotterdam (CIF / CFR Europe)</option>
+<option value="antwerp">Antwerp (CIF / CFR Europe)</option>
+<option value="newyork">New York / New Jersey (CIF USA East Coast)</option>
+<option value="longbeach">Los Angeles / Long Beach (CIF USA West Coast)</option>
+<option value="jebelali">Jebel Ali, Dubai (CIF Middle East)</option>
+<option value="alexandria">Alexandria / Damietta (FOB Egypt)</option>
+</select>
+</div>
+<!-- Estimated Freight & Lead Matrix Indicator -->
+<div class="bg-surface-container p-space-sm rounded flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">sailing</span>
+<span>Transit Window:</span>
+<strong class="text-primary font-semibold">12–16 Sea Freight Days</strong>
+</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">
+                  FOB / CIF Options Available
+                </div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs">
+<button class="flex-1 bg-primary text-on-primary py-space-md px-space-lg rounded font-label-lg text-label-lg font-semibold hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-space-xs" id="btn-add-inquiry" type="submit">
+<span class="material-symbols-outlined text-[20px]">add_task</span>
+<span>Add to Wholesale Inquiry List</span>
+</button>
+<a class="bg-surface-container text-primary py-space-md px-space-md rounded font-label-lg text-label-lg font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-space-xs flex-shrink-0" href="#" onclick="alert('Downloading Certified Technical Specification Sheet (PDF: HerboJet_Chamomile_Spec_2025.pdf)'); return false;" title="Download Certificate of Analysis and Technical Sheet">
+<span class="material-symbols-outlined text-[20px] text-secondary">picture_as_pdf</span>
+<span>Download TDS</span>
+</a>
+</div>
+<div class="hidden p-space-sm bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm text-center" id="inquiry-alert">
+                ✓ Added Egyptian Chamomile (1,000 KG) to active wholesale order dossier.
+              </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Technical Specifications & Pharmacopoeia Standards Table -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase font-semibold block mb-1">
+            Laboratory Analysis &amp; Pharmacopoeia Compliance
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+            Technical Specification Matrix
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Standardized according to European Pharmacopoeia (Ph. Eur. 10th Ed.) and United States Pharmacopeia (USP-NF) monographs for dry botanical raw materials.
+        </p>
+</div>
+<!-- Tab Buttons Navigation -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-sm mb-space-md">
+<button class="spec-tab-btn px-space-lg py-space-sm rounded font-label-lg text-label-lg bg-primary text-on-primary font-semibold shadow-sm flex items-center gap-space-xs whitespace-nowrap" onclick="switchTab('phys-chem', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">science</span>
+<span>Physical &amp; Chemical Specs</span>
+</button>
+<button class="spec-tab-btn px-space-lg py-space-sm rounded font-label-lg text-label-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary font-semibold shadow-sm flex items-center gap-space-xs whitespace-nowrap transition-colors" onclick="switchTab('microbio', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">bug_report</span>
+<span>Microbiological Limits</span>
+</button>
+<button class="spec-tab-btn px-space-lg py-space-sm rounded font-label-lg text-label-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary font-semibold shadow-sm flex items-center gap-space-xs whitespace-nowrap transition-colors" onclick="switchTab('pesticides', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Residues &amp; Heavy Metals</span>
+</button>
+<button class="spec-tab-btn px-space-lg py-space-sm rounded font-label-lg text-label-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary font-semibold shadow-sm flex items-center gap-space-xs whitespace-nowrap transition-colors" onclick="switchTab('processing', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">factory</span>
+<span>Sterilization &amp; Treatment</span>
+</button>
+</div>
+<!-- Tab 1: Physical & Chemical Specifications -->
+<div class="spec-tab-content bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden" id="tab-phys-chem">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-md px-space-lg">Parameter / Analytical Test</th>
+<th class="py-space-md px-space-lg">Standard Pharmacopoeia Requirement</th>
+<th class="py-space-md px-space-lg">HerboJet Export Typical Result</th>
+<th class="py-space-md px-space-lg">Test Method</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Botanical Identification</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Matricaria chamomilla L. (Asteraceae)</td>
+<td class="py-space-md px-space-lg font-medium text-secondary">Conforms (Microscopy / TLC fingerprint)</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Ph. Eur. 2.8.25</td>
+</tr>
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Plant Part Utilized</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Whole dried flower heads (Capitula)</td>
+<td class="py-space-md px-space-lg font-medium text-secondary">Dried capitula with attached peduncle ≤ 2cm</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Visual Examination</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Visual Appearance</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Golden yellow disk florets, intact ivory ray petals</td>
+<td class="py-space-md px-space-lg font-medium text-secondary">Vibrant golden yellow; &lt; 2% brown florets</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Macroscopic Assessment</td>
+</tr>
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Aroma &amp; Organoleptic Profile</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Characteristic aromatic, sweet, floral, herbal</td>
+<td class="py-space-md px-space-lg font-medium text-secondary">Clean, deeply honeyed-floral; zero sour fermentation</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Sensory Panel Test</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Moisture Content</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">≤ 12.0% maximum</td>
+<td class="py-space-md px-space-lg font-bold text-primary font-mono text-[14px]">8.2% – 9.8%</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Loss on Drying (Ph. Eur. 2.2.32)</td>
+</tr>
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Volatile Essential Oil</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">≥ 0.40% ml / 100g dry herb minimum</td>
+<td class="py-space-md px-space-lg font-bold text-secondary font-mono text-[14px]">0.48% – 0.65% v/w</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Steam Distillation (Ph. Eur. 2.8.12)</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Chamazulene Content in Oil</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Standard marker presence</td>
+<td class="py-space-md px-space-lg font-bold text-primary font-mono text-[14px]">≥ 1.8% in volatile fraction</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">GC-FID / GC-MS</td>
+</tr>
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Total Ash</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">≤ 13.0% maximum</td>
+<td class="py-space-md px-space-lg font-bold text-primary font-mono text-[14px]">8.5% – 10.4%</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Ph. Eur. 2.4.16</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Acid-Insoluble Ash</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">≤ 4.0% maximum</td>
+<td class="py-space-md px-space-lg font-bold text-primary font-mono text-[14px]">0.8% – 1.4%</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Ph. Eur. 2.8.1</td>
+</tr>
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Foreign Matter (Other botanicals)</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">≤ 2.0% maximum</td>
+<td class="py-space-md px-space-lg font-bold text-secondary font-mono text-[14px]">&lt; 0.5% (Optical sorted)</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Ph. Eur. 2.8.2</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Stems &gt; 2 cm Length</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">≤ 5.0% (Grade A Whole) / ≤ 1.0% (TBC)</td>
+<td class="py-space-md px-space-lg font-bold text-primary font-mono text-[14px]">&lt; 2.5% (Grade A)</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Gravimetric Manual Sorting</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Tab 2: Microbiological Limits -->
+<div class="spec-tab-content hidden bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden" id="tab-microbio">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-md px-space-lg">Microbial Assay</th>
+<th class="py-space-md px-space-lg">Standard Raw Limit (Ph. Eur. Cat 5.1.8B)</th>
+<th class="py-space-md px-space-lg">Steam-Treated Limit (Ph. Eur. Cat 5.1.8A)</th>
+<th class="py-space-md px-space-lg">Reference Method</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Total Aerobic Microbial Count (TAMC)</td>
+<td class="py-space-md px-space-lg font-mono text-on-surface-variant">≤ 5 × 10⁷ CFU / g</td>
+<td class="py-space-md px-space-lg font-mono font-bold text-secondary">≤ 5 × 10⁴ CFU / g</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">ISO 4833 / Ph. Eur. 2.6.12</td>
+</tr>
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Total Combined Yeasts and Molds (TYMC)</td>
+<td class="py-space-md px-space-lg font-mono text-on-surface-variant">≤ 5 × 10⁵ CFU / g</td>
+<td class="py-space-md px-space-lg font-mono font-bold text-secondary">≤ 5 × 10² CFU / g</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">ISO 21527-2 / Ph. Eur. 2.6.12</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Escherichia coli</td>
+<td class="py-space-md px-space-lg font-mono text-on-surface-variant">≤ 10³ CFU / g</td>
+<td class="py-space-md px-space-lg font-mono font-bold text-secondary">&lt; 10 CFU / g</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">ISO 16649-2 / Ph. Eur. 2.6.13</td>
+</tr>
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Salmonella spp.</td>
+<td class="py-space-md px-space-lg font-bold text-secondary">Absent in 25g</td>
+<td class="py-space-md px-space-lg font-bold text-secondary">Absent in 25g</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">ISO 6579 / Ph. Eur. 2.6.13</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-primary">Staphylococcus aureus</td>
+<td class="py-space-md px-space-lg font-mono text-on-surface-variant">&lt; 100 CFU / g</td>
+<td class="py-space-md px-space-lg font-mono font-bold text-secondary">Absent in 1g</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">ISO 6888 / Ph. Eur. 2.6.13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Tab 3: Pesticides & Heavy Metals -->
+<div class="spec-tab-content hidden bg-surface-container-lowest rounded-lg shadow-sm p-space-lg" id="tab-pesticides">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">shield</span>
+              Pesticide Residue Limits (MRL)
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Every production lot is subjected to comprehensive multi-residue pesticide screens (&gt;500 compounds) tested via accredited Eurofins or SGS laboratories in accordance with:
+            </p>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span><strong>EC Regulation 396/2005:</strong> Standard conventional chamomile complies with EU Maximum Residue Limits.</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span><strong>USDA National Organic Program (NOP):</strong> Organic certified lots guarantee 100% non-detectable synthetic pesticide residues.</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span><strong>BNN Guidelines:</strong> Organic orientation values (&lt;0.01 mg/kg) rigorously honored.</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">leaderboard</span>
+              Heavy Metal Tolerances
+            </h3>
+<div class="space-y-space-sm">
+<div class="bg-surface-container p-space-sm rounded flex justify-between items-center">
+<span class="font-semibold text-primary">Lead (Pb)</span>
+<span class="font-mono text-secondary font-bold">&lt; 3.00 mg/kg (ppm)</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex justify-between items-center">
+<span class="font-semibold text-primary">Cadmium (Cd)</span>
+<span class="font-mono text-secondary font-bold">&lt; 1.00 mg/kg (ppm)</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex justify-between items-center">
+<span class="font-semibold text-primary">Arsenic (As)</span>
+<span class="font-mono text-secondary font-bold">&lt; 1.00 mg/kg (ppm)</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex justify-between items-center">
+<span class="font-semibold text-primary">Mercury (Hg)</span>
+<span class="font-mono text-secondary font-bold">&lt; 0.10 mg/kg (ppm)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 4: Processing & Treatments -->
+<div class="spec-tab-content hidden bg-surface-container-lowest rounded-lg shadow-sm p-space-lg" id="tab-processing">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded">
+<span class="material-symbols-outlined text-[32px] text-primary mb-space-xs block">no_flash</span>
+<h4 class="font-headline-sm text-[18px] text-primary font-bold mb-1">Irradiation-Free</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our chamomile products are 100% free from ionizing radiation treatment, strictly preserving delicate volatile terpenes and chamazulene isomers.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded">
+<span class="material-symbols-outlined text-[32px] text-primary mb-space-xs block">block</span>
+<h4 class="font-headline-sm text-[18px] text-primary font-bold mb-1">ETO-Free Guarantee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ethylene Oxide (ETO) fumigation is strictly banned across all HerboJet handling facilities, fully meeting current stringent European Union food bans.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded">
+<span class="material-symbols-outlined text-[32px] text-primary mb-space-xs block">heat</span>
+<h4 class="font-headline-sm text-[18px] text-primary font-bold mb-1">Optional Steam Sterilization</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous HTST saturated steam sterilization available upon request for low-germ pharmaceutical and RTE tea blend formulations.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Export Packaging & Container Load Configurations -->
+<section class="w-full py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="mb-space-lg">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase font-semibold block mb-1">Industrial Logistics &amp; Palletization</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Standard Export Packaging Options</h2>
+</div>
+<!-- 3 Packaging Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-xl">
+<!-- Packaging Option 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">inventory</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider block mb-1">Configuration 01</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-sm">Standard Multi-Wall Kraft Sack</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              15–20 kg 4-ply unbleached heavy-duty kraft paper sack equipped with an inner heat-sealed 50-micron polyethylene (PE) moisture barrier. Ideal for whole flower heads and cut-and-sifted botanicals.
+            </p>
+</div>
+<div class="bg-surface-container p-space-sm rounded text-body-sm flex justify-between items-center">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase">Net Weight:</span>
+<strong class="text-primary">15 – 20 KG / Bag</strong>
+</div>
+</div>
+<!-- Packaging Option 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">package_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider block mb-1">Configuration 02</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-sm">Double-Wall Export Carton</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              20–25 kg corrugated double-wall export carton box with inner food-grade liner bag. High-strength stackability designed to prevent crush damage to whole flower florets during transatlantic shipping.
+            </p>
+</div>
+<div class="bg-surface-container p-space-sm rounded text-body-sm flex justify-between items-center">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase">Net Weight:</span>
+<strong class="text-primary">20 – 25 KG / Carton</strong>
+</div>
+</div>
+<!-- Packaging Option 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">conveyor_belt</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider block mb-1">Configuration 03</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-sm">Ventilated FIBC Big Bag</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              250–400 kg food-grade woven polypropylene FIBC bulk tote bag with discharge spout. Specifically optimized for automated industrial tea-bag packaging plants and high-volume botanical extraction extractors.
+            </p>
+</div>
+<div class="bg-surface-container p-space-sm rounded text-body-sm flex justify-between items-center">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase">Net Weight:</span>
+<strong class="text-primary">250 – 400 KG / Tote</strong>
+</div>
+</div>
+</div>
+<!-- Container Loading Data Banner -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm">
+<h3 class="font-headline-sm text-[20px] text-primary mb-space-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">forklift</span>
+          Ocean Freight Full Container Load (FCL) Payload Capacity
+        </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-primary text-on-primary flex items-center justify-center font-bold font-label-md flex-shrink-0">
+              20'
+            </div>
+<div class="flex-1">
+<span class="font-headline-sm text-[16px] font-bold text-primary block">20-Foot Dry Standard Container (FCL)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<strong>Whole Flower Heads:</strong> ~3,200 to 4,000 KG (Volumetric limited)<br/>
+<strong>Tea-Bag Cut (TBC) / Powder:</strong> ~7,000 to 7,500 KG
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-primary text-on-primary flex items-center justify-center font-bold font-label-md flex-shrink-0">
+              40'
+            </div>
+<div class="flex-1">
+<span class="font-headline-sm text-[16px] font-bold text-primary block">40-Foot High Cube Container (40ft HC)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<strong>Whole Flower Heads:</strong> ~8,000 to 9,500 KG (Palletized or hand-stacked)<br/>
+<strong>Tea-Bag Cut (TBC) / Powder:</strong> ~15,000 to 16,500 KG
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Agricultural Origin & Harvest Traceability Section -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-center">
+<!-- Interactive Agronomic Narrative -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase font-semibold">
+            Seed-to-Shipment Direct Sourcing
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight">
+            Nile Valley Agricultural Heritage &amp; Shade Drying
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            The rich alluvial silt soils and arid, temperate winter microclimate of Upper Egypt’s Nile Basin provide the absolute premier global terroir for matricaria chamomilla cultivation. HerboJet maintains exclusive cultivation contracts over 1,400+ feddans across Fayoum, Beni Suef, and Menia.
+          </p>
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold flex-shrink-0">
+                1
+              </div>
+<div>
+<span class="font-headline-sm text-[16px] text-primary font-bold">Planting Cycle: October – November</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sown using certified non-GMO seed stock adapted for maximum chamazulene and alpha-bisabolol accumulation.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold flex-shrink-0">
+                2
+              </div>
+<div>
+<span class="font-headline-sm text-[16px] text-primary font-bold">Multi-Flush Hand Harvesting: January – April</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Flowers are selectively hand-picked at peak bloom disc aperture across 4 to 6 continuous seasonal pickings.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold flex-shrink-0">
+                3
+              </div>
+<div>
+<span class="font-headline-sm text-[16px] text-primary font-bold">UV-Shielded Shaded Tunnel Drying</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dried exclusively under covered, ventilated drying structures away from direct sun exposure, completely eliminating photolytic degradation of essential oil and floret pigmentation.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Geographic Origin Visual Frame -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="relative w-full aspect-[16/10] rounded-lg overflow-hidden shadow-md">
+<div class="w-full h-full bg-cover bg-center" data-location="Beni Suef, Egypt" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5HjffRyGSyTpZS7C_4WakNNmfPS3ajG-CKm5iwtthI49TU3PZ4FRQR-Yb0YVasW9Zbv8MDAaViwjPW9AlKWl9CHroZBdDv9xMc5iQ0BsvYicpWqEXDn6Bya8DEYyyqWOs6C2wKbNUl7lmAIRLpMVs8NMupz2Qz6XDmKpMDvOYF_5g2w_3cAks721-lC8AFLsPhK71G61CT-gU9yDZ8ZlQCcxO8-jYl4llqPp1GkYDniTDj2yOO78')"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md bg-surface/95 backdrop-blur-md p-space-md rounded shadow-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-[16px] text-primary font-bold block">Beni Suef &amp; Fayoum Farming Basin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">29.0667° N, 31.0994° E • Altitude 32m above sea level</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[28px]">terrain</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm text-center">
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1,400+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Contracted Feddans</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Batch Traceability</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">&lt; 48 Hrs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Harvest to Drying Shed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Botanical Grades for Blending & Extraction -->
+<section class="w-full py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="flex items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase font-semibold block mb-1">Synergistic Export Catalog</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Frequently Contracted Botanical Blends</h2>
+</div>
+<a class="hidden sm:inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary hover:text-primary transition-colors" href="#">
+<span>View All Herbs &amp; Spices</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Related Item 1: Peppermint -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<div class="aspect-[4/3] rounded overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sun-dried dark green Egyptian peppermint leaves cut and sifted on a clean wooden inspection table, displaying vibrant botanical character and intense menthol aroma potential." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALRG_QLZNrgpeS69Ahc56CKqcsWves14bH_3EG0T-0nhyoVazv1fWJi0iLIxE_2jamGZgbUv3FrmRr_TYH-lnfmonhB72Ou3bArcmJFNpG7IFYIErjJrbxKJz7_SFCd0F5TnQb6oAsrSUgOHEDAlDsx2DBsfG9Xtd_03HrdHzrgAN8ymSGSeqctdgryU6fHCYMC6zps5KbYPMi53EmEDddV9EWRYBp4GI4q9CMT_0pxAGk7loRlBs"/>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold block mb-1">Mentha piperita</span>
+<h3 class="font-headline-sm text-[20px] text-primary mb-1">Egyptian Peppermint Leaves</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">High menthol volatile oil (&gt;1.2%), cut &amp; sifted 1-3mm, crushed leaves, tea-bag cut.</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MOQ: 500 KG</span>
+<a class="font-label-md text-label-md text-primary font-semibold hover:text-secondary flex items-center gap-0.5" href="#">
+<span>View Spec</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Related Item 2: Spearmint -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<div class="aspect-[4/3] rounded overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Premium dried Egyptian spearmint flakes, vibrant emerald green herbal flakes, clean organic aroma profile, packaged for bulk herbal infusions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCHS7byhNh41rKrkr17DvV2Wxlq3jyYWvhORld-6HVfcAQOrIVWae6S1Ox_M-yZMo6GgVj7LVIkzNqx4Kbj8_0OWeDkXFMqaUSncbz6iwDkPYS2mdmUDhiX0Pu2RBEIGiRYBxZj0973irTeVoTUoEy2AEgXnq-X6XbE7P6A9mfHIstWwrAY85HEYlyRG8euQ9y-6MaVtDai4gxrs2D3khKDbWwTSkC8IggZoGl3fryuDxEAJr_DGM"/>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold block mb-1">Mentha spicata</span>
+<h3 class="font-headline-sm text-[20px] text-primary mb-1">Spearmint Flakes &amp; TBC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Naturally sweet carvone-dominant aromatic profile, steam-sterilized grade available.</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MOQ: 500 KG</span>
+<a class="font-label-md text-label-md text-primary font-semibold hover:text-secondary flex items-center gap-0.5" href="#">
+<span>View Spec</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Related Item 3: Hibiscus -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<div class="aspect-[4/3] rounded overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Deep ruby red whole dried hibiscus flower calyces (karkadeh) from Aswan Egypt, displaying rich anthocyanin red color and clean tart floral calyx structure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtEgy9UR6wQBE1b3c-f4FX9sMHFTCvDLoHtSY9GlM5gpfXqSbtdaNFn_xHgY5wytoeIVaG3zZS2WBtGVq2SqhnnvPVBvzMg8MdFHy9m3PScdjqJuQ-anZ-TAeVpa2s9oaHdFs1bJkab4fcmXKVjLSy5GTVuC9TYznZoH57Ptd0W-aJZDazKHMTSLMvPrEqJosKw2wKCx7O4BOMgQh8MlySz86LMvMpUPcxXEfcXP3WFdPssXDdsRA"/>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold block mb-1">Hibiscus sabdariffa</span>
+<h3 class="font-headline-sm text-[20px] text-primary mb-1">Hibiscus Flowers (Karkadeh)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Aswan &amp; Fayoum origin, whole dark-red calyces, fine cuts, and pure extraction powder.</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MOQ: 1,000 KG</span>
+<a class="font-label-md text-label-md text-primary font-semibold hover:text-secondary flex items-center gap-0.5" href="#">
+<span>View Spec</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Lab Sample Inquiries CTA Banner -->
+<section class="w-full bg-primary text-on-primary py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="bg-primary-container p-space-xl rounded-lg shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs text-tertiary-fixed-dim font-label-md text-label-md uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Commercial Evaluation &amp; QA Support</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-space-sm leading-tight">
+            Require a Certificate of Analysis (CoA) or Working Pre-Shipment Sample?
+          </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            We dispatch 500g analytical working samples along with lot-specific GC-MS essential oil chromatograms, heavy metals screens, and organic certificates via DHL Express within 48 business hours to qualified procurement directors.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md flex-shrink-0 w-full lg:w-auto">
+<button class="w-full sm:w-auto bg-surface text-primary hover:bg-surface-bright px-space-xl py-space-md rounded font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-xs" onclick="openSampleModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">science</span>
+<span>Request Lab Sample (500g)</span>
+</button>
+<a class="w-full sm:w-auto bg-transparent text-on-primary hover:bg-white/10 px-space-lg py-space-md rounded font-label-lg text-label-lg font-semibold transition-colors flex items-center justify-center gap-space-xs" href="#">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Contact Export Lab Desk</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Client-side Micro-Interactions Script -->
+<script>
+    // Tab switching for Pharmacopoeia Specifications
+    function switchTab(tabId, btnElement) {
+      const contents = document.querySelectorAll('.spec-tab-content');
+      contents.forEach(el => el.classList.add('hidden'));
+
+      const target = document.getElementById('tab-' + tabId);
+      if (target) {
+        target.classList.remove('hidden');
+      }
+
+      const buttons = document.querySelectorAll('.spec-tab-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+
+      btnElement.classList.add('bg-primary', 'text-on-primary');
+      btnElement.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+    }
+
+    // Thumbnail Showcase Navigator
+    const showcasePrompts = [
+      "Macro close-up photograph of whole dried Egyptian chamomile flowers, showcasing pristine golden yellow disk florets, intact ivory white ray petals, and delicate green calyces under soft natural daylight against a neutral linen background, high botanical fidelity.",
+      "Precision tea-bag cut chamomile herbal particles, uniform golden-green milled botanical flakes passing 0.5mm to 1.5mm screens with minimal fine dust.",
+      "High-resolution laboratory macro inspection of optical color sorted chamomile petals showing pure uniform chromatic separation and zero weed seeds.",
+      "Heavy duty multi-wall 25kg kraft paper export sacks on wooden heat-treated pallets inside an industrial agricultural logistics export warehouse."
+    ];
+
+    function updateShowcase(index) {
+      const img = document.getElementById('main-showcase-img');
+      if (img && showcasePrompts[index]) {
+        img.setAttribute('data-alt', showcasePrompts[index]);
+      }
+
+      const thumbButtons = document.querySelectorAll('.thumb-btn');
+      thumbButtons.forEach((btn, idx) => {
+        if (idx === index) {
+          btn.classList.remove('opacity-85');
+          btn.classList.add('shadow-md');
+        } else {
+          btn.classList.add('opacity-85');
+          btn.classList.remove('shadow-md');
+        }
+      });
+    }
+
+    // Wholesale Inquiry Box Interactive Trigger
+    function triggerInquiryConfirm() {
+      const alertBox = document.getElementById('inquiry-alert');
+      const cutSelect = document.getElementById('calc-cut');
+      const qtySelect = document.getElementById('calc-qty');
+
+      if (alertBox) {
+        const selectedCutText = cutSelect.options[cutSelect.selectedIndex].text;
+        const selectedQtyText = qtySelect.options[qtySelect.selectedIndex].text;
+        alertBox.innerHTML = `✓ Added <strong>${selectedQtyText}</strong> (${selectedCutText}) to active wholesale inquiry list.`;
+        alertBox.classList.remove('hidden');
+        setTimeout(() => {
+          alertBox.classList.add('hidden');
+        }, 5000);
+      }
+    }
+
+    function openSampleModal() {
+      alert("Sample Dossier Form Initialized: 500g Pre-Shipment Lot Sample of Matricaria chamomilla scheduled for courier dispatch. Enter company credentials on inquiry checkout.");
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter lg:gap-space-xl mb-space-xl"><div class="flex flex-col"><div class="flex items-center gap-space-sm mb-space-md"><img alt="HerboJet Logo Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UXPyXvu89gdWxXQNgw0MDtQckLYPsdocorQ3v0fjTfERy46r-Qv7JL_8cPWICZDLipJFTu50EDvN-qZ8zgfLWfZMJCntvZnmMPqR2JLyO0qrkGcZ7DB2fjmU_SagHP7sS4irEE4LTVvMocZwB7F96A-4A4pZgx5JHJ7KYRBuO9f5PdUwGRkHuii4Yx6O1rYz6bppUPMhBb743HAUnVtZaRz3qoQBacLNsDyfNpvK7uhtfPWhsxIPgmxQ"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">HerboJet</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">Premier Egyptian exporter of certified medicinal herbs, aromatic spices, and organic botanicals for international food, pharmaceutical, and nutraceutical manufacturers worldwide.</p><div class="flex items-center gap-space-sm"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container px-space-sm py-space-xs rounded"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> ISO 22000</span><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container px-space-sm py-space-xs rounded"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> USDA Organic</span></div></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary mb-space-md">Product Categories</span><ul class="flex flex-col gap-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Dried Herbs</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Culinary Spices</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Seeds &amp; Legumes</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Botanical Oils &amp; Extracts</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Custom Processing Cuts</li></ul></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary mb-space-md">Quality &amp; Compliance</span><ul class="flex flex-col gap-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Seed-to-Shipment Traceability</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Processing &amp; Sorting Facility</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Phytosanitary &amp; Testing Lab</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Moisture &amp; Purity Standards</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors">Export Packaging &amp; Palletizing</li></ul></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary mb-space-md">International Inquiries</span><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><div><span class="font-label-md text-label-md text-primary block">Commercial Desk:</span><span>wholesale@herbojet-botanicals.com</span></div><div><span class="font-label-md text-label-md text-primary block">Export Port Locations:</span><span>Cairo &amp; Alexandria Export Hubs, Egypt</span></div><div class="pt-space-xs"><span class="inline-block bg-surface-container text-on-surface font-label-sm text-label-sm px-space-sm py-space-xs rounded">Response within 24 business hours</span></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 HerboJet Botanical Exports S.A.E. All Rights Reserved. International wholesale supply only.</p><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><span class="hover:text-on-surface cursor-pointer">Privacy Policy</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="hover:text-on-surface cursor-pointer">Export &amp; Phytosanitary Terms</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="hover:text-on-surface cursor-pointer">Incoterms 2020 Compliance</span></div></div></div></footer></body></html>
